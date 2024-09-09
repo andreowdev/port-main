@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { getCurrentlyPlaying } from '../hooks/useSpotify.js';
-import { FaPlay, FaPause, FaBackward, FaForward, FaVolumeUp } from 'react-icons/fa'; // Ícones para controles
 
 const CurrentlyPlaying = () => {
   const [track, setTrack] = useState(null);
   const [error, setError] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(true); // Estado para simular play/pause
+  const [isPlaying, setIsPlaying] = useState(true); 
 
   useEffect(() => {
     const fetchCurrentlyPlaying = async () => {
@@ -48,11 +47,12 @@ const CurrentlyPlaying = () => {
 
   return (
     <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-      <h1 className="font-mono text-white text-lg ">
+      <h1 className="font-mono text-white text-center text-2xl mb-4">
         O que estou escutando no meu{' '}
         <a
           href="https://open.spotify.com/user/lyixkn1qhupjuexfkygpbzmnd"
-          className="text-green-500 hover:underline"
+          className="text-green-500 underline"
+          target='_blank'
         >
           Spotify
         </a>

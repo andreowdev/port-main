@@ -1,0 +1,12 @@
+.person {
+    width: 57rem;
+}
+
+.person-div {
+    width: 65rem;
+}
+
+.bg-opacity-custom {
+    background-color: rgba(3, 14, 31, 0.3); /* bg-slate-700 com opacidade */
+  }
+  

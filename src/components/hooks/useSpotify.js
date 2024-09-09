@@ -1,6 +1,6 @@
 import axios from 'axios';
 import querystring from 'querystring';
-import base64 from 'base-64'; // Importação compatível
+import base64 from 'base-64'; 
 const { encode: base64Encode } = base64;
 
 const clientId = 'd1b51e49ea534c6b95297061b2df9a0a';          
@@ -40,13 +40,13 @@ export const getLastPlayedTrack = async () => {
     });
 
     if (response.status === 200 && response.data.items.length > 0) {
-      const lastTrack = response.data.items[0].track; // Pega a última música da lista
+      const lastTrack = response.data.items[0].track; 
       return {
         name: lastTrack.name,
         artists: lastTrack.artists.map(artist => artist.name).join(', '),
         album: lastTrack.album.name,
         albumImage: lastTrack.album.images[0].url,
-        playedAt: response.data.items[0].played_at, // Data e hora em que foi tocada
+        playedAt: response.data.items[0].played_at, 
       };
     } else {
       return { message: 'Nenhuma música foi reproduzida recentemente.' };

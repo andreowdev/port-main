@@ -1,0 +1,25 @@
+/* Hora.css */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.toggle-button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}

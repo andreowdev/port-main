@@ -1,8 +1,8 @@
 import React from "react";
 import HeaderFinal from "../components/Header/index.jsx";
 import "./home.css";
-import Projects from '../components/Projects/Projects.jsx'
-import Footer from "../components/footer/footer.jsx";
+import Contact from "../components/contacts/contact.jsx";
+import Footer from '../components/footer/footer.jsx'
 
 export default function Projetos() {
   return (
@@ -10,8 +10,8 @@ export default function Projetos() {
       <div className="container max-w-screen-lg   bg-opacity-20 rounded-lg">
         <HeaderFinal />
         <main>
-          <div className="flex flex-col lg:flex-row justify-between mt-8">
-              <Projects />  
+          <div className="flex flex-col lg:flex-row justify-center mt-8">
+              <Contact  />  
           </div>
         </main>
         <div className=" lg:flex-row justify-center mt-8">

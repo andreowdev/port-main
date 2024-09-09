@@ -50,7 +50,7 @@ export default function Header() {
                         <ul className="flex space-x-6 justify-center">
                             <li><a href="/" className=" hover:underline">Sobre</a></li>
                             <li><a href="/projetos" className="hover:underline">Projetos</a></li>
-                            <li><a href="#" className="hover:underline">Contato</a></li>
+                            <li><a href="/contato" className="hover:underline">Contato</a></li>
                         </ul>
                     </nav>
                 </div>

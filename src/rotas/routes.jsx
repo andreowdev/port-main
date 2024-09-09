@@ -2,11 +2,11 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
-// Lazy load dos componentes
 const YourMainComponent = lazy(() => import('../pages/home.jsx'));
 const Projetos = lazy(() => import('../pages/projetos.jsx'));
+const Contato = lazy(() => import('../pages/contacts.jsx'));
 
-// Componente que adiciona animação às páginas
+
 const PageWrapper = ({ children }) => (
   <motion.div
     initial={{ opacity: 0 }}
@@ -18,7 +18,6 @@ const PageWrapper = ({ children }) => (
   </motion.div>
 );
 
-// Componente que gerencia as rotas com animações
 const AnimatedRoutes = () => {
   const location = useLocation();
 
@@ -36,6 +35,13 @@ const AnimatedRoutes = () => {
           <PageWrapper>
             <Suspense fallback={<div>Loading Projetos...</div>}>
               <Projetos />
+            </Suspense>
+          </PageWrapper>
+        } />
+        <Route path="/contato" element={
+          <PageWrapper>
+            <Suspense fallback={<div>Loading Contato...</div>}>
+              <Contato />
             </Suspense>
           </PageWrapper>
         } />
