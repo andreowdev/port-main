@@ -8,6 +8,7 @@ import four from "../img/projetos/p4.png";
 import five from "../img/projetos/p5.png";
 import six from "../img/projetos/p6.png";
 import seven from "../img/projetos/p7.png";
+import data from "../pt.json"
 
 function ProjectCard({ title, description, repoLink, siteLink, imageLink, image }) {
   const isRepoLinkDisabled = repoLink === "#";
@@ -85,66 +86,59 @@ function ProjectCard({ title, description, repoLink, siteLink, imageLink, image 
 export default function Projects() {
   const projects = [
     {
-      title: "Meu Portfólio",
-      description:
-        "Este é um breve comentário sobre o Projeto 1, explicando suas funcionalidades e o que foi desenvolvido.",
-      repoLink: "https://github.com/andreowdev/port-main",
-      siteLink: "#",
-      imageLink: 'https://github.com/andreowdev/port-main',
+      title: data.Projects.Project1.title,
+      description: data.Projects.Project1.description,
+      repoLink: data.Projects.Project1.repoLink,
+      siteLink: data.Projects.Project1.siteLink,
+      imageLink: data.Projects.Project1.imageLink,
       image: one,
     },
     {
-      title: "L.A Soft Solutions",
-      description:
-        "Este é um breve comentário sobre o Projeto 2, explicando suas funcionalidades e o que foi desenvolvido.",
-      repoLink: "https://github.com/andreowdev/landing-page-hest",
-      siteLink: "https://andreowdev.github.io/landing-page-hest/",
-      imageLink: 'https://andreowdev.github.io/landing-page-hest/',
+      title: data.Projects.Project2.title,
+      description: data.Projects.Project2.description,
+      repoLink: data.Projects.Project2.repoLink,
+      siteLink: data.Projects.Project2.siteLink,
+      imageLink: data.Projects.Project2.imageLink,
       image: two,
     },
     {
-      title: "Gerenciamento de Restaurante",
-      description:
-        "Este é um breve comentário sobre o Projeto 2, explicando suas funcionalidades e o que foi desenvolvido.",
-      repoLink: "https://github.com/andreowdev/landing-page-hest",
-      siteLink: "#",
-      imageLink: 'https://github.com/andreowdev/cadastrodeprodutos',
+      title: data.Projects.Project3.title,
+      description: data.Projects.Project3.description,
+      repoLink: data.Projects.Project3.repoLink,
+      siteLink: data.Projects.Project3.siteLink,
+      imageLink: data.Projects.Project3.imageLink,
       image: three,
     },
     {
-      title: "To-Do List",
-      description:
-        "Este é um breve comentário sobre o Projeto 2, explicando suas funcionalidades e o que foi desenvolvido.",
-      repoLink: "https://github.com/andreowdev/to-doListt",
-      siteLink: "https://andreowdev.github.io/to-doListt/",
-      imageLink: 'https://andreowdev.github.io/to-doListt/',
+      title: data.Projects.Project4.title,
+      description: data.Projects.Project4.description,
+      repoLink: data.Projects.Project4.repoLink,
+      siteLink: data.Projects.Project4.siteLink,
+      imageLink: data.Projects.Project4.imageLink,
       image: four,
     },
     {
-      title: "Site Hortifruti",
-      description:
-        "Este é um breve comentário sobre o Projeto 2, explicando suas funcionalidades e o que foi desenvolvido.",
-      repoLink: "https://github.com/leonfritas/PIM_UNIP",
-      siteLink: "#",
-      imageLink: 'https://github.com/leonfritas/PIM_UNIP',
+      title: data.Projects.Project5.title,
+      description: data.Projects.Project5.description,
+      repoLink: data.Projects.Project5.repoLink,
+      siteLink: data.Projects.Project5.siteLink,
+      imageLink: data.Projects.Project5.imageLink,
       image: five,
     },
     {
-      title: "Cadastro de Produtos",
-      description:
-        "Este é um breve comentário sobre o Projeto 2, explicando suas funcionalidades e o que foi desenvolvido.",
-      repoLink: "https://github.com/andreowdev/cadastrodeprodutos",
-      siteLink: "#",
-      imageLink: 'https://github.com/andreowdev/cadastrodeprodutos',
+      title: data.Projects.Project6.title,
+      description: data.Projects.Project6.description,
+      repoLink: data.Projects.Project6.repoLink,
+      siteLink: data.Projects.Project6.siteLink,
+      imageLink: data.Projects.Project6.imageLink,
       image: six,
     },
     {
-      title: "Buscador CEP",
-      description:
-        "Este é um breve comentário sobre o Projeto 2, explicando suas funcionalidades e o que foi desenvolvido.",
-      repoLink: "https://github.com/andreowdev/buscador-cep",
-      siteLink: "https://github.com/andreowdev/buscador-cep",
-      imageLink: 'https://github.com/andreowdev/buscador-cep',
+      title: data.Projects.Project7.title,
+      description: data.Projects.Project7.description,
+      repoLink: data.Projects.Project7.repoLink,
+      siteLink: data.Projects.Project7.siteLink,
+      imageLink: data.Projects.Project7.imageLink,
       image: seven,
     },
   ];

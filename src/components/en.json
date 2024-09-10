@@ -1,0 +1,77 @@
+{
+    "Info": {
+        "name": "Andreo Henrique",
+        "dev": "Full-Stack JR Developer",
+        "ativo": "I am currently available to work, so feel free to contact me. 👋"
+    },
+    "About": {
+       "title":  "About Me",
+       "sobre": "I am a passionate developer who loves what I do. I often say that 'those who do what they love live on vacation.' That's why I'm always eager to learn something new that helps me become a better developer. I have 1 year of experience and have worked both on the back-end and front-end, using JS, JQuery, HTML/CSS3, SQL Server, MySql, and I am currently studying React and Node."
+    },
+    "Socials": {
+        "Discord": "https://discord.gg/7Xw79guB",
+        "Gmail": "mailto:developerandreo@gmail.com",
+        "Linkedin": "https://www.linkedin.com/in/andreo-henrique/",
+        "Github": "https://github.com/andreowdev",
+        "Instagram": "https://www.instagram.com/uandreow/",
+        "Whatsapp": "https://api.whatsapp.com/send/?phone=92991784771&text&type=phone_number&app_absent=0"
+    },
+    "Projects": {
+        "Project1": {
+            "title": "My Portfolio",
+            "description": "This is my personal website, the one you are currently on :). Developed with React, Tailwind, APIs.",
+            "repoLink": "https://github.com/andreowdev/port-main",
+            "siteLink": "#",
+            "imageLink": "https://github.com/andreowdev/port-main",
+            "image": "one"
+        },
+        "Project2": {
+            "title": "L.A Soft Solutions",
+            "description": "This is a project to showcase the company L.A SOFT SOLUTIONS. Developed with React and Tailwind.",
+            "repoLink": "https://github.com/andreowdev/landing-page-hest",
+            "siteLink": "https://andreowdev.github.io/landing-page-hest/",
+            "imageLink": "https://andreowdev.github.io/landing-page-hest/",
+            "image": "two"
+        },
+        "Project3": {
+            "title": "Restaurant Management",
+            "description": "This is a restaurant management and service system project called HEST. Developed with React, Node, Tailwind, MySQL.",
+            "repoLink": "https://github.com/andreowdev/landing-page-hest",
+            "siteLink": "#",
+            "imageLink": "https://github.com/andreowdev/cadastrodeprodutos",
+            "image": "three"
+        },
+        "Project4": {
+            "title": "To-Do List",
+            "description": "A to-do list project that stores inputted data in local storage. Developed in HTML/CSS/JS VANILLA.",
+            "repoLink": "https://github.com/andreowdev/to-doListt",
+            "siteLink": "https://andreowdev.github.io/to-doListt/",
+            "imageLink": "https://andreowdev.github.io/to-doListt/",
+            "image": "four"
+        },
+        "Project5": {
+            "title": "Hortifruti Website",
+            "description": "Hortifruti website, React, Node, Tailwind, MySQL.",
+            "repoLink": "https://github.com/leonfritas/PIM_UNIP",
+            "siteLink": "#",
+            "imageLink": "https://github.com/leonfritas/PIM_UNIP",
+            "image": "fiver"
+        },
+        "Project6": {
+            "title": "Product Registration",
+            "description": "Product registration system using Node to build an API and connect to MySQL. Developed with React, Tailwind, MySQL, Node.",
+            "repoLink": "https://github.com/andreowdev/cadastrodeprodutos",
+            "siteLink": "#",
+            "imageLink": "https://github.com/andreowdev/cadastrodeprodutos",
+            "image": "six"
+        },
+        "Project7": {
+            "title": "Postal Code Finder",
+            "description": "Look up your address using your postal code. Developed with React and CSS.",
+            "repoLink": "https://github.com/andreowdev/buscador-cep",
+            "siteLink": "https://andreowdev.github.io/buscador-cep/",
+            "imageLink": "https://andreowdev.github.io/buscador-cep/",
+            "image": "seven"
+        }
+    }
+}

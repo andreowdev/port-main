@@ -1,4 +1,4 @@
-import data  from "../data.json";
+import data  from "../pt.json";
 
 export default function About() {
     return (

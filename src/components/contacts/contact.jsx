@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import data from '../data.json'
 
 const initialState = {
   name: '',
@@ -109,12 +110,12 @@ const Contact = (props) => {
             <div className="social flex justify-center">
               <ul className="flex">
                 <li className="mr-4">
-                  <a href="https://api.whatsapp.com/send/?phone=%2B559285650879&text&type=phone_number&app_absent=0" className="text-gray-600 hover:text-blue-500">
+                  <a href={data.Socials.Whatsapp} className="text-gray-600 hover:text-blue-500">
                     <FontAwesomeIcon icon={faWhatsapp} color='white' size="4x" />
                   </a>
                 </li>
                 <li className="mr-4">
-                  <a href="https://www.instagram.com/lasoftsolutions/" className="text-gray-600 hover:text-blue-400 ml-12">
+                  <a href={data.Socials.Instagram} className="text-gray-600 hover:text-blue-400 ml-12">
                     <FontAwesomeIcon icon={faInstagram} color='white' size="4x" />
                   </a>
                 </li>

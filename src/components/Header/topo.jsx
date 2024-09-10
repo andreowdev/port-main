@@ -1,5 +1,5 @@
 import React from 'react';
-import data from "../data.json";
+import data from "../pt.json";
 import icon from "../img/icon.png";
 import discord from "../img/social/discord.png";
 import github from "../img/social/github.png";
@@ -8,10 +8,10 @@ import linkedin from "../img/social/linkedin.png";
 
 export default function Header() {
     const sociais = [
-        { src: discord, alt: "Discord", link: "#" },
-        { src: github, alt: "GitHub", link: "#" },
-        { src: gmail, alt: "Gmail", link: "#" },
-        { src: linkedin, alt: "LinkedIn", link: "#" },
+        { src: discord, alt: "Discord", link: data.Socials.Discord },
+        { src: github, alt: "GitHub", link: data.Socials.Github },
+        { src: gmail, alt: "Gmail", link: data.Socials.Gmail },
+        { src: linkedin, alt: "LinkedIn", link: data.Socials.Gmail },
     ];
 
     return (
