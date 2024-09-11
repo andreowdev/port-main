@@ -9,27 +9,28 @@ import Footer from "../components/footer/footer.jsx";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center   text-white py-14">
-      <div className="container max-w-screen-lg rounded-lg ">
+    <div className="min-h-screen flex flex-col items-center text-white py-14 px-4">
+      <div className="max-w-screen-lg w-full rounded-lg">
         <HeaderFinal />
-        <main>
-          <div className="flex lg:flex-row flex-col justify-between mt-8 person-div">
-            <div className="bg-opacity-custom shadow-lg rounded-lg p-3 mb-4 lg:mb-0">
+
+        <main className="w-full mt-8">
+          <div className="flex flex-col lg:flex-row lg:justify-between gap-4">
+            <div className="bg-opacity-custom shadow-lg rounded-lg p-4 flex-1">
               <Stack />
             </div>
-            <div className="w-full lg:w-2/3 h-56 text-white   rounded-lg  mr-32 ml-12">
+            <div className="w-full lg:w-2/3 h-auto text-white rounded-lg">
               <SpotifyRecentTracks />
             </div>
           </div>
-          <div className="mt-8 person rounded-lg">
+          <div className="mt-8 rounded-lg">
             <Github />
           </div>
-          <div className="mt-8 person rounded-lg">
+          <div className="mt-8 rounded-lg">
             <About />
           </div>
         </main>
-        <div className=" lg:flex-row justify-center mt-8">
-            <Footer />
+        <div className="mt-8">
+          <Footer />
         </div>
       </div>
     </div>

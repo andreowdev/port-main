@@ -1,14 +1,14 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import one from "../img/projetos/p1.png";
-import "./project.css";
 import two from "../img/projetos/p2.png";
 import three from "../img/projetos/p3.png";
 import four from "../img/projetos/p4.png";
 import five from "../img/projetos/p5.png";
 import six from "../img/projetos/p6.png";
 import seven from "../img/projetos/p7.png";
-import data from "../pt.json"
+import { useTranslation } from 'react-i18next';
+import "./project.css";
 
 function ProjectCard({ title, description, repoLink, siteLink, imageLink, image }) {
   const isRepoLinkDisabled = repoLink === "#";
@@ -81,64 +81,64 @@ function ProjectCard({ title, description, repoLink, siteLink, imageLink, image 
   );
 }
 
-
-
 export default function Projects() {
+  const { t } = useTranslation();
+
   const projects = [
     {
-      title: data.Projects.Project1.title,
-      description: data.Projects.Project1.description,
-      repoLink: data.Projects.Project1.repoLink,
-      siteLink: data.Projects.Project1.siteLink,
-      imageLink: data.Projects.Project1.imageLink,
+      title: t('Projects.Project1.title'),
+      description: t('Projects.Project1.description'),
+      repoLink: t('Projects.Project1.repoLink'),
+      siteLink: t('Projects.Project1.siteLink'),
+      imageLink: t('Projects.Project1.imageLink'),
       image: one,
     },
     {
-      title: data.Projects.Project2.title,
-      description: data.Projects.Project2.description,
-      repoLink: data.Projects.Project2.repoLink,
-      siteLink: data.Projects.Project2.siteLink,
-      imageLink: data.Projects.Project2.imageLink,
+      title: t('Projects.Project2.title'),
+      description: t('Projects.Project2.description'),
+      repoLink: t('Projects.Project2.repoLink'),
+      siteLink: t('Projects.Project2.siteLink'),
+      imageLink: t('Projects.Project2.imageLink'),
       image: two,
     },
     {
-      title: data.Projects.Project3.title,
-      description: data.Projects.Project3.description,
-      repoLink: data.Projects.Project3.repoLink,
-      siteLink: data.Projects.Project3.siteLink,
-      imageLink: data.Projects.Project3.imageLink,
+      title: t('Projects.Project3.title'),
+      description: t('Projects.Project3.description'),
+      repoLink: t('Projects.Project3.repoLink'),
+      siteLink: t('Projects.Project3.siteLink'),
+      imageLink: t('Projects.Project3.imageLink'),
       image: three,
     },
     {
-      title: data.Projects.Project4.title,
-      description: data.Projects.Project4.description,
-      repoLink: data.Projects.Project4.repoLink,
-      siteLink: data.Projects.Project4.siteLink,
-      imageLink: data.Projects.Project4.imageLink,
+      title: t('Projects.Project4.title'),
+      description: t('Projects.Project4.description'),
+      repoLink: t('Projects.Project4.repoLink'),
+      siteLink: t('Projects.Project4.siteLink'),
+      imageLink: t('Projects.Project4.imageLink'),
       image: four,
     },
     {
-      title: data.Projects.Project5.title,
-      description: data.Projects.Project5.description,
-      repoLink: data.Projects.Project5.repoLink,
-      siteLink: data.Projects.Project5.siteLink,
-      imageLink: data.Projects.Project5.imageLink,
+      title: t('Projects.Project5.title'),
+      description: t('Projects.Project5.description'),
+      repoLink: t('Projects.Project5.repoLink'),
+      siteLink: t('Projects.Project5.siteLink'),
+      imageLink: t('Projects.Project5.imageLink'),
       image: five,
     },
     {
-      title: data.Projects.Project6.title,
-      description: data.Projects.Project6.description,
-      repoLink: data.Projects.Project6.repoLink,
-      siteLink: data.Projects.Project6.siteLink,
-      imageLink: data.Projects.Project6.imageLink,
+      title: t('Projects.Project6.title'),
+      description: t('Projects.Project6.description'),
+      repoLink: t('Projects.Project6.repoLink'),
+      siteLink: t('Projects.Project6.siteLink'),
+      imageLink: t('Projects.Project6.imageLink'),
       image: six,
     },
     {
-      title: data.Projects.Project7.title,
-      description: data.Projects.Project7.description,
-      repoLink: data.Projects.Project7.repoLink,
-      siteLink: data.Projects.Project7.siteLink,
-      imageLink: data.Projects.Project7.imageLink,
+      title: t('Projects.Project7.title'),
+      description: t('Projects.Project7.description'),
+      repoLink: t('Projects.Project7.repoLink'),
+      siteLink: t('Projects.Project7.siteLink'),
+      imageLink: t('Projects.Project7.imageLink'),
       image: seven,
     },
   ];

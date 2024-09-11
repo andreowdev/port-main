@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import data from '../data.json'
 
 const initialState = {
   name: '',

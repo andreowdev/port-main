@@ -3,6 +3,8 @@ import HeaderFinal from "../components/Header/index.jsx";
 import "./home.css";
 import Projects from '../components/Projects/Projects.jsx'
 import Footer from "../components/footer/footer.jsx";
+import { useTranslation } from "react-i18next";
+import '../i18n.js'
 
 export default function Projetos() {
   return (

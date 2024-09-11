@@ -38,6 +38,25 @@ html, body {
   animation: marquee 10s linear infinite;
 }
 
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-left {
+  flex: 1;
+}
+
+
+
 
 
 

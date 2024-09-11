@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { getCurrentlyPlaying } from '../hooks/useSpotify.js';
+import { useTranslation } from 'react-i18next';
+
 
 const CurrentlyPlaying = () => {
   const [track, setTrack] = useState(null);
   const [error, setError] = useState(null);
   const [isPlaying, setIsPlaying] = useState(true); 
+
+  const {t} = useTranslation();
 
   useEffect(() => {
     const fetchCurrentlyPlaying = async () => {
@@ -48,7 +52,7 @@ const CurrentlyPlaying = () => {
   return (
     <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
       <h1 className="font-mono text-white text-center text-2xl mb-4">
-        O que estou escutando no meu{' '}
+        {t('Spotify')}{' '}
         <a
           href="https://open.spotify.com/user/lyixkn1qhupjuexfkygpbzmnd"
           className="text-green-500 underline"
