@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./topo.jsx";
 import Hora from "../hora.jsx";
-import Language from "../language/language.jsx";
+import Language from "../Language/language.jsx";
 import "../../pages/home.css"; 
 
 export default function HeaderFinal() {

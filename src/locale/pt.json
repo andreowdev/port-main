@@ -77,10 +77,10 @@
     "Spotify": "O que estou ouvindo no meu",
     "Contact": {
         "title": "Contato",
-        "placeholderName": "fodase",
-        "placeholderEmail": "fodase",
-        "placeholderMessage": "fodase",
-        "Contact.submitButton": "fodase"
+        "placeholderName": "Digite seu nome:",
+        "placeholderEmail": "Digite seu email",
+        "placeholderMessage": "Digite sua mensagem",
+        "submitButton": "ENVIAR"
     },
     "stack": {
         "title": "Minhas Tecnologias",

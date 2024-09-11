@@ -98,7 +98,7 @@ const Contact = (props) => {
                   type="submit"
                   className="btn bg-[#3282B8] hover:bg-[#5aabb8] mt-3 text-white font-bold py-3 px-8 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
-                  {t('Contact.submitButton')}
+                  <p>{t('Contact.submitButton')}</p>
                 </button>
               </div>
             </form>
