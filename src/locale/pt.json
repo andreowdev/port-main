@@ -74,5 +74,25 @@
             "image": "seven"
         }
     },
-    "Spotify": "O que estou ouvindo no meu"
+    "Spotify": "O que estou ouvindo no meu",
+    "Contact": {
+        "title": "Contato",
+        "placeholderName": "fodase",
+        "placeholderEmail": "fodase",
+        "placeholderMessage": "fodase",
+        "Contact.submitButton": "fodase"
+    },
+    "stack": {
+        "title": "Minhas Tecnologias",
+        "subtitle": "Algumas das tecnologias que eu uso"
+    },
+    "github": {
+        "title": "Meu Github",
+        "subtitle": "Veja algum dos meus projetos e contribuições."
+    },
+    "nav": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contatos"
+    }
 }

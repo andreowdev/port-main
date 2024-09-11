@@ -2,6 +2,14 @@
     width: 57rem;
 }
 
+.person-container {
+  width: 65rem;
+}
+
+.person-header {
+  width: 52rem;
+}
+
 .person-div {
     width: 65rem;
 }
@@ -9,6 +17,7 @@
 .bg-opacity-custom {
     background-color: rgba(3, 14, 31, 0.3); /* bg-slate-700 com opacidade */
 }
+
   
 
 /* home.css */
@@ -18,56 +27,20 @@
     box-sizing: border-box;
   }
   
-  /* Adaptações para telas maiores */
   @media (min-width: 768px) {
     .person-div {
       padding: 1rem;
     }
+    .pad-person {
+  padding: 2px;
+}
     .bg-opacity-custom {
       background-color: rgba(0, 0, 0, 0.5); 
     }
+    .person-header {
+  width: 52rem;
+}
+  .person-container {
+    width: 50rem;
   }
-  
-
-.header-final-container {
-    width: 100%;
-    max-width: 100vw; 
-    overflow-x: hidden; 
   }
-  
-  header {
-    color: white;
-  }
-  
-  .header-final-container .flex {
-    display: flex;
-  }
-  
-  .header-final-container .flex-1 {
-    flex: 1;
-  }
-  
-  .header-final-container .items-center {
-    align-items: center;
-  }
-  
-  .header-final-container .justify-between {
-    justify-content: space-between;
-  }
-  
-  .header-final-container .justify-center {
-    justify-content: center;
-  }
-  
-  
-  
-  .header-final-container .md\:items-end {
-    align-items: flex-end; /* Alinha ao final em telas médias e grandes */
-  }
-  
-  
-  
- 
-  
- 
-  

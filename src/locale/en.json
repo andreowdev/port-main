@@ -2,7 +2,7 @@
     "Info": {
         "name": "Andreo Henrique",
         "dev": "Full-Stack JR Developer",
-        "ativo": "I am currently available to work, so feel free to contact me. 👋"
+        "ativo": "I am currently available to work, so feel free to contact me. Thank you 👋"
     },
     "About": {
        "title":  "About Me",
@@ -74,5 +74,25 @@
             "image": "seven"
         }
     },
-    "Spotify": "What am I hearing on my"
+    "Spotify": "What am I hearing on my",
+    "Contact": {
+        "title": "corre",
+        "placeholderName": "fodase",
+        "placeholderEmail": "fodase",
+        "placeholderMessage": "fodase",
+        "Contact.submitButton": "fodase"
+    },
+    "stack": {
+        "title": "My Technologies",
+        "subtitle": "Some of the technologies I use"
+    },
+    "github": {
+        "title": "My Github",
+        "subtitle": "See some of my projects and contributions."
+    },
+    "nav": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contacts"
+    }
 }

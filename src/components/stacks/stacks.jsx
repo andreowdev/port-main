@@ -6,8 +6,11 @@ import react from "../img/tecnologis/react.png";
 import tailwind from "../img/tecnologis/tailwind.png";
 import typescript from "../img/tecnologis/ts.png";
 import vscode from "../img/tecnologis/vscode.png";
+import { useTranslation } from "react-i18next";
 
 export default function Stack() {
+
+    const { t } = useTranslation();
     const stacks = [
         { src: express, alt: "Express", link: "https://expressjs.com/" },
         { src: git, alt: "Git", link: "https://git-scm.com/" },
@@ -41,9 +44,9 @@ export default function Stack() {
                 </div>
             </div>
             <div className="text-white text-center">
-                <h1 className="text-2xl font-bold mb-2">MyStack</h1>
+                <h1 className="text-2xl font-bold mb-2">{t('stack.title')}</h1>
                 <hr className="border-gray-600 mb-2" />
-                <p>Algumas das tecnologias que eu uso</p>
+                <p>{t('stack.subtitle')}</p>
             </div>
         </section>
     );

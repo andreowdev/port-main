@@ -8,9 +8,11 @@ import '../i18n.js'
 
 export default function Projetos() {
   return (
-    <div className="min-h-screen flex flex-col items-center   text-white py-14">
-      <div className="container max-w-screen-lg   bg-opacity-20 rounded-lg">
-        <HeaderFinal />
+    <>
+    <div className="min-h-screen flex flex-col items-center text-white py-14 px-4">
+      <div className="max-w-screen-lg w-full rounded-lg ml-2">
+      <HeaderFinal />
+      </div>
         <main>
           <div className="flex flex-col lg:flex-row justify-between mt-8">
               <Projects />  
@@ -19,7 +21,8 @@ export default function Projetos() {
         <div className=" lg:flex-row justify-center mt-8">
             <Footer />
         </div>
-      </div>
-    </div>
+        </div>
+    </>
+    
   );
 }

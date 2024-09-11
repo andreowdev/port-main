@@ -19,17 +19,17 @@ export default function Header() {
   return (
     <div>
       <section className="flex flex-col items-center md:flex-row md:items-start md:justify-between ">
-        <div className="flex-shrink-0 mb-4 md:mb-0">
+        <div className="flex-shrink-0 md:mb-0">
           <img
             src={icon}
             alt="icon-andreo"
-            className="w-32 h-32 md:w-64 md:h-64 object-cover clip-icon hidden md:block" // Foto oculta em telas pequenas
+            className="w-64 h-64 md:w-64 md:h-64 object-cover clip-icon hidden md:block" 
           />
         </div>
         <div className="text-white flex-shrink-0 w-full md:w-[500px] text-center md:text-left">
           <h1 className="font-bold text-2xl md:text-4xl">{t("Info.name")}</h1>
           <p className="font-bold text-lg md:text-xl">{t("Info.dev")}</p>
-          <p>{t("Info.ativo")}</p>
+          <p className="xl:w-full xl:ml-0 md:w-2/3 md:ml-0  w-[300px] ml-64">{t("Info.ativo")}</p>
           <hr className="mt-2 mb-4 border-white w-full" />
           <div className="flex flex-wrap justify-center md:justify-start space-x-4 overflow-x-auto mb-4">
             {sociais.map((tech, index) => (
@@ -48,21 +48,21 @@ export default function Header() {
               </a>
             ))}
           </div>
-          <nav className="bg-opacity-30 rounded-lg p-4">
+          <nav className="bg-opacity-30 rounded-lg ">
   <ul className="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 justify-center md:justify-start">
     <li>
       <a href="/" className="hover:underline">
-        Sobre
+        {t('nav.about')}
       </a>
     </li>
     <li>
       <a href="/projetos" className="hover:underline">
-        Projetos
+      {t('nav.projects')}
       </a>
     </li>
     <li>
       <a href="/contato" className="hover:underline">
-        Contato
+      {t('nav.contact')}
       </a>
     </li>
   </ul>
