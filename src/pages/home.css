@@ -1,46 +1,81 @@
-.person {
-    width: 57rem;
-}
+/* home.css */
 
-.person-container {
-  width: 65rem;
-}
-
-.person-header {
-  width: 52rem;
-}
-
+/* Estilos gerais */
 .person-div {
-    width: 65rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .bg-opacity-custom {
-    background-color: rgba(3, 14, 31, 0.3); /* bg-slate-700 com opacidade */
+  background-color: rgba(3, 14, 31, 0.3); /* bg-slate-700 com opacidade */
 }
 
-  
-
-/* home.css */
-
-.person-div {
-    width: 100%;
-    box-sizing: border-box;
+/* Ajustes para telas pequenas (mobile) */
+@media (max-width: 767px) {
+  .person {
+      width: 100%; /* Ajusta a largura para 100% da tela em dispositivos móveis */
   }
-  
-  @media (min-width: 768px) {
-    .person-div {
-      padding: 1rem;
-    }
-    .pad-person {
-  padding: 2px;
+
+  .person-container,
+  .person-header {
+      width: 100%; /* Ajusta a largura para 100% da tela em dispositivos móveis */
+  }
+
+  .person-div {
+      padding: 0.5rem; /* Menos padding para telas pequenas */
+  }
+
+  .pad-person {
+      padding: 0.5rem; /* Ajusta o padding */
+  }
+
+  .bg-opacity-custom {
+      background-color: rgba(0, 0, 0, 0.3); /* Menos opacidade para melhor visibilidade em telas pequenas */
+  }
 }
-    .bg-opacity-custom {
-      background-color: rgba(0, 0, 0, 0.5); 
-    }
-    .person-header {
-  width: 52rem;
-}
+
+/* Ajustes para telas médias e maiores (tablets e desktops) */
+@media (min-width: 768px) {
+  .person {
+      width: 57rem; /* Largura fixada para dispositivos maiores */
+  }
+
   .person-container {
-    width: 50rem;
+      width: 65rem; /* Largura fixada para dispositivos maiores */
   }
+
+  .person-header {
+      width: 52rem; /* Largura fixada para dispositivos maiores */
   }
+
+  .person-div {
+      padding: 1rem; /* Padding para telas médias e maiores */
+  }
+
+  .pad-person {
+      padding: 2px; /* Padding ajustado para telas médias e maiores */
+  }
+
+  .bg-opacity-custom {
+      background-color: rgba(0, 0, 0, 0.5); /* Opacidade maior para melhor contraste */
+  }
+}
+
+/* Ajustes para telas muito grandes (desktops grandes e monitores) */
+@media (min-width: 1200px) {
+  .person {
+      width: 70rem; /* Ajuste para telas muito grandes */
+  }
+
+  .person-container {
+      width: 80rem; /* Ajuste para telas muito grandes */
+  }
+
+  .person-header {
+      width: 65rem; /* Ajuste para telas muito grandes */
+  }
+
+  .person-div {
+      padding: 2rem; /* Mais padding para maior conforto visual em telas grandes */
+  }
+}

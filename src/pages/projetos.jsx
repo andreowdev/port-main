@@ -9,16 +9,16 @@ import '../i18n.js'
 export default function Projetos() {
   return (
     <>
-    <div className="min-h-screen flex flex-col items-center text-white py-14 px-4">
+    <div className=" flex flex-col items-center text-white py-14 px-4">
       <div className="max-w-screen-lg w-full rounded-lg ml-2">
       <HeaderFinal />
       </div>
         <main>
-          <div className="flex flex-col lg:flex-row justify-between mt-8">
+          <div className="flex flex-col  justify-between mt-8">
               <Projects />  
           </div>
         </main>
-        <div className=" lg:flex-row justify-center mt-8">
+        <div className="  justify-center mt-8">
             <Footer />
         </div>
         </div>

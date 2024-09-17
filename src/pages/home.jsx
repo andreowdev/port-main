@@ -9,7 +9,7 @@ import Footer from "../components/footer/footer.jsx";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center text-white py-14 px-4">
+    <div className=" flex flex-col items-center text-white py-14 px-4">
       <div className="max-w-screen-lg w-full rounded-lg">
         <HeaderFinal />
 
@@ -18,7 +18,7 @@ export default function Home() {
             <div className="bg-opacity-custom shadow-lg rounded-lg p-4 flex-1 lg:w-1/3">
               <Stack />
             </div>
-            <div className="w-full lg:w-2/3 h-auto text-white rounded-lg">
+            <div className="w-full lg:w-2/3 h-auto  rounded-lg">
               <SpotifyRecentTracks />
             </div>
           </div>

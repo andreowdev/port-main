@@ -9,7 +9,7 @@ export default function HeaderFinal() {
     
     <div className="header-final-container ">
       <Language />
-      <header className="flex flex-col md:flex-row justify-between items-center ">
+      <header className="flex flex-col md:flex-row justify-between items-center  ">
         <div className=" items-center justify-center md:justify-start bg-opacity-custom person-header">
           <Header />
         </div>

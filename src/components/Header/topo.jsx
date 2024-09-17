@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <div>
-      <section className="flex flex-col items-center md:flex-row md:items-start md:justify-between ">
+      <section className="flex flex-col items-center md:flex-row md:items-start md:justify-between">
         <div className="flex-shrink-0 md:mb-0">
           <img
             src={icon}
@@ -29,7 +29,7 @@ export default function Header() {
         <div className="text-white flex-shrink-0 w-full md:w-[500px] text-center md:text-left">
           <h1 className="font-bold text-2xl md:text-4xl">{t("Info.name")}</h1>
           <p className="font-bold text-lg md:text-xl">{t("Info.dev")}</p>
-          <p className="xl:w-full xl:ml-0 md:w-2/3 md:ml-0  w-[300px] ml-64">{t("Info.ativo")}</p>
+          <p className="">{t("Info.ativo")}</p>
           <hr className="mt-2 mb-4 border-white w-full" />
           <div className="flex flex-wrap justify-center md:justify-start space-x-4 overflow-x-auto mb-4">
             {sociais.map((tech, index) => (
@@ -48,26 +48,25 @@ export default function Header() {
               </a>
             ))}
           </div>
-          <nav className="bg-opacity-30 rounded-lg ">
-  <ul className="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 justify-center md:justify-start">
-    <li>
-      <a href="/port-main" className="hover:underline">
-        {t('nav.about')}
-      </a>
-    </li>
-    <li>
-      <a href="/port-main/projetos" className="hover:underline">
-      {t('nav.projects')}
-      </a>
-    </li>
-    <li>
-      <a href="/port-main/contato" className="hover:underline">
-      {t('nav.contact')}
-      </a>
-    </li>
-  </ul>
-</nav>
-
+          <nav className="bg-opacity-30 rounded-lg">
+            <ul className="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 justify-center md:justify-start">
+              <li>
+                <a href="#/" className="hover:underline">
+                  {t('nav.about')}
+                </a>
+              </li>
+              <li>
+                <a href="#/projetos" className="hover:underline">
+                  {t('nav.projects')}
+                </a>
+              </li>
+              <li>
+                <a href="#/contato" className="hover:underline">
+                  {t('nav.contact')}
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
     </div>

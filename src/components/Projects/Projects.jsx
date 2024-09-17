@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import one from "../img/projetos/p1.png";
 import two from "../img/projetos/p2.png";
@@ -15,18 +15,26 @@ function ProjectCard({ title, description, repoLink, siteLink, imageLink, image 
   const isSiteLinkDisabled = siteLink === "#";
   const isImageLinkDisabled = imageLink === "#";
 
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setIsLoaded(true);
+  };
+
   return (
-    <div className="flex flex-col text-white items-center w-full md:w-4/5 mx-auto p-4 bg-opacity-custom rounded-lg shadow-lg">
+    <div className="flex flex-col text-white items-center  md:w-4/5 mx-auto p-4 bg-opacity-custom rounded-lg shadow-lg">
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
-        <div className="relative w-full flex-1 shadow-2xl">
+        <div className="relative  flex-1 shadow-2xl">
           {!isImageLinkDisabled ? (
             <a href={imageLink} target="_blank" rel="noopener noreferrer">
               <img
                 src={image}
                 alt={title}
-                className="w-full h-auto rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out shadow-2xl"
+                onLoad={handleImageLoad}
+                style={{ opacity: isLoaded ? 1 : 0 }}
+                className="rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out shadow-2xl"
               />
-              <h1 className="absolute inset-0 flex justify-center items-center text-2xl font-bold bg-black bg-opacity-50 p-4 rounded-lg">
+              <h1 className="absolute inset-0 flex justify-center items-center text-2xl font-bold bg-opacity-50 p-4 rounded-lg">
                 {title}
               </h1>
             </a>
@@ -35,7 +43,9 @@ function ProjectCard({ title, description, repoLink, siteLink, imageLink, image 
               <img
                 src={image}
                 alt={title}
-                className="w-full h-auto rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out shadow-2xl"
+                onLoad={handleImageLoad}
+                style={{ opacity: isLoaded ? 1 : 0 }}
+                className=" rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out shadow-2xl"
               />
               <h1 className="absolute inset-0 flex justify-center items-center text-2xl font-bold bg-black bg-opacity-50 p-4 rounded-lg">
                 {title}
