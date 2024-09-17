@@ -32,9 +32,9 @@ function ProjectCard({ title, description, repoLink, siteLink, imageLink, image 
                 alt={title}
                 onLoad={handleImageLoad}
                 style={{ opacity: isLoaded ? 1 : 0 }}
-                className="rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out shadow-2xl"
+                className="rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out shadow-2xl "
               />
-              <h1 className="absolute inset-0 flex justify-center items-center text-2xl font-bold bg-opacity-50 p-4 rounded-lg">
+              <h1 className="absolute inset-0 flex justify-center items-center text-2xl font-bold bg-opacity-custom   p-4 rounded-lg">
                 {title}
               </h1>
             </a>
@@ -47,7 +47,7 @@ function ProjectCard({ title, description, repoLink, siteLink, imageLink, image 
                 style={{ opacity: isLoaded ? 1 : 0 }}
                 className=" rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out shadow-2xl"
               />
-              <h1 className="absolute inset-0 flex justify-center items-center text-2xl font-bold bg-black bg-opacity-50 p-4 rounded-lg">
+              <h1 className="absolute inset-0 flex justify-center items-center text-2xl font-bold  p-4 rounded-lg">
                 {title}
               </h1>
             </div>
