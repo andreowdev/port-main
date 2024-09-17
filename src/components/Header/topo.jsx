@@ -51,17 +51,17 @@ export default function Header() {
           <nav className="bg-opacity-30 rounded-lg ">
   <ul className="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 justify-center md:justify-start">
     <li>
-      <a href="/" className="hover:underline">
+      <a href="/port-main" className="hover:underline">
         {t('nav.about')}
       </a>
     </li>
     <li>
-      <a href="/projetos" className="hover:underline">
+      <a href="/port-main/projetos" className="hover:underline">
       {t('nav.projects')}
       </a>
     </li>
     <li>
-      <a href="/contato" className="hover:underline">
+      <a href="/port-main/contato" className="hover:underline">
       {t('nav.contact')}
       </a>
     </li>

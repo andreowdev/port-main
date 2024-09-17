@@ -25,21 +25,21 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence mode="wait"> {/* Espera a animação de saída terminar antes de carregar a próxima página */}
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={
+        <Route path="/port-main" element={
           <PageWrapper>
             <Suspense fallback={<div>:)</div>}>
               <YourMainComponent />
             </Suspense>
           </PageWrapper>
         } />
-        <Route path="/projetos" element={
+        <Route path="/port-main/projetos" element={
           <PageWrapper>
             <Suspense fallback={<div>:)</div>}>
               <Projetos />
             </Suspense>
           </PageWrapper>
         } />
-        <Route path="/contato" element={
+        <Route path="/port-main/contato" element={
           <PageWrapper>
             <Suspense fallback={<div>:)</div>}>
               <Contato />
