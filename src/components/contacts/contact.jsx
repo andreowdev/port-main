@@ -109,7 +109,7 @@ const Contact = (props) => {
             <div className="social flex justify-center">
               <ul className="flex">
                 <li className="mr-4">
-                  <a href={t('socials.whatsapp')} className="text-gray-600 hover:text-blue-500">
+                  <a href={t('https://api.whatsapp.com/send/?phone=92991784771&text&type=phone_number&app_absent=0')} target='_blank' className="text-gray-600 hover:text-blue-500">
                     <FontAwesomeIcon icon={faWhatsapp} color='white' size="4x" />
                   </a>
                 </li>

@@ -10,10 +10,9 @@ export default function Header() {
   const { t } = useTranslation();
 
   const sociais = [
-    { src: discord, alt: "Discord", link: t("socials.discord") },
-    { src: github, alt: "GitHub", link: t("socials.github") },
-    { src: gmail, alt: "Gmail", link: t("socials.gmail") },
-    { src: linkedin, alt: "LinkedIn", link: t("socials.linkedin") },
+    { src: discord, alt: "Discord", link: t("https://discord.gg/7Xw79guB") },
+    { src: github, alt: "GitHub", link: t("https://github.com/andreowdev") },
+    { src: linkedin, alt: "LinkedIn", link: t("https://www.linkedin.com/in/andreo-henrique/") },
   ];
 
   return (

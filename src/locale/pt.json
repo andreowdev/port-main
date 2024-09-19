@@ -21,7 +21,7 @@
             "title": "Meu Portfólio",
             "description": "Este é o meu site pessoal, é o site em que você está atualmente :). Desenvolvido em React, Tailwind, APIs.",
             "repoLink": "https://github.com/andreowdev/port-main",
-            "siteLink": "#",
+            "siteLink": "https://andreowdev.github.io/port-main/#/",
             "imageLink": "https://github.com/andreowdev/port-main",
             "image": "one"
         },
