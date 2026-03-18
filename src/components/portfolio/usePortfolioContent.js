@@ -20,6 +20,13 @@ export function usePortfolioContent() {
     contactEyebrow: "contact",
     contactTitleAccent: "let's",
     contactTitleRest: "talk",
+    scheduleCta: "schedule a meeting",
+    scheduleDescription:
+      "I'm open to work.",
+    scheduleEyebrow: "availability",
+    scheduleTitleAccent: "open",
+    scheduleTitleRest: "to work",
+    scheduleTrailing: "Let's talk.",
     copiedEmail: "email copied",
     copyEmail: "copy email",
     emailLabel: "email",
@@ -48,7 +55,7 @@ export function usePortfolioContent() {
     primaryCta: "view resume",
     secondaryCta: "view contact",
     summary:
-      "Frontend Software Engineer focused on code quality, scalability, performance, and user experience.",
+      "Full Stack Software Engineer focused on code quality, scalability, performance, and user experience.",
     spotifyDescription:
       "A live glimpse of what is playing right now, or the most recent track when the player is idle.",
     spotifyFallbackMessage: "Spotify activity is unavailable right now.",
@@ -63,7 +70,7 @@ export function usePortfolioContent() {
     toolLabel: "toolbox",
     viewAllProjects: "view all projects",
     workModeBody:
-      "My process usually balances visual exploration, component systems, and real usability concerns. I like interfaces that feel clean, fast, and intentional.",
+      "My process usually balances product thinking, scalable implementation, and real usability concerns. I like software that feels clean, fast, and intentional from end to end.",
     workModeLabel: "how I work",
   };
 
@@ -93,6 +100,17 @@ export function usePortfolioContent() {
       description: text.contactDescription,
       titleAccent: text.contactTitleAccent,
       titleRest: text.contactTitleRest,
+    },
+    scheduleCopy: {
+      availabilityBody: text.availabilityBody,
+      availabilityLabel: text.availabilityLabel,
+      availabilityTitle: text.availabilityTitle,
+      cta: text.scheduleCta,
+      description: text.scheduleDescription,
+      eyebrow: text.scheduleEyebrow,
+      titleAccent: text.scheduleTitleAccent,
+      trailing: text.scheduleTrailing,
+      titleRest: text.scheduleTitleRest,
     },
     copiedEmailLabel: text.copiedEmail,
     copyEmailLabel: text.copyEmail,
@@ -138,7 +156,7 @@ export function usePortfolioContent() {
           ],
           location: "Rio de Janeiro, Brazil · Remote",
           period: "JUL 2025 - PRESENT",
-          role: "Frontend Software Engineer",
+          role: "Full Stack Software Engineer",
           stack: ["React.js", "TypeScript", "REST APIs", "Dashboards", "Marketplace", "BaaS"],
           type: "Full-time",
         },
@@ -221,7 +239,6 @@ export function usePortfolioContent() {
       projects: text.projectsLabel,
       spotify: text.spotifyLabel,
       tools: text.toolLabel,
-      workflow: text.workModeLabel,
     },
     spotify: {
       description: text.spotifyDescription,
