@@ -1,48 +1,101 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Meta charset e viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./src/components/img/favicon.ico" />
-
-    <!-- Descrição e palavras-chave -->
-    <meta name="description" content="Meu nome é Andreo Henrique, este é meu portfólio profissional! Confira meus projetos, habilidades e mais sobre minha carreira." />
-    <meta name="keywords" content="Andreo Henrique, portfólio, desenvolvedor, programação, front-end, back-end, projetos" />
+    <title>Andreo Henrique | Frontend Software Engineer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Andreo Henrique, a Frontend Software Engineer building fintech products, marketplace flows, scalable interfaces, and high-quality web experiences."
+    />
+    <meta
+      name="keywords"
+      content="Andreo Henrique, frontend software engineer, portfolio, React, TypeScript, Next.js, Node.js, fintech, marketplace, web development"
+    />
     <meta name="author" content="Andreo Henrique" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="theme-color" content="#090909" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f3efe7" media="(prefers-color-scheme: light)" />
 
-    <!-- SEO para Google -->
-    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.andreodev.com.br/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="alternate" href="https://www.andreodev.com.br/" hreflang="en" />
 
-    <!-- Open Graph (para redes sociais como Facebook e LinkedIn) -->
-    <meta property="og:title" content="Andreo Henrique - Portfólio Profissional" />
-    <meta property="og:description" content="Meu nome é Andreo Henrique, este é meu portfólio profissional! Confira meus projetos, habilidades e mais sobre minha carreira." />
-    <meta property="og:image" content="https://andreo.dev/src/components/img/port-main.png" /> <!-- Substitua com o link para sua imagem de preview -->
-    <meta property="og:url" content="https://andreo.dev.com.br" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Andreo Henrique Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://www.andreodev.com.br/" />
+    <meta property="og:title" content="Andreo Henrique | Frontend Software Engineer Portfolio" />
+    <meta
+      property="og:description"
+      content="Frontend Software Engineer focused on fintech products, marketplace flows, scalable interfaces, and thoughtful user experiences."
+    />
+    <meta property="og:image" content="https://www.andreodev.com.br/port-main.png" />
+    <meta property="og:image:alt" content="Portfolio preview of Andreo Henrique" />
 
-    <!-- Twitter Cards (para compartilhamento no Twitter) -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Andreo Henrique - Portfólio Profissional" />
-    <meta name="twitter:description" content="Meu nome é Andreo Henrique, este é meu portfólio profissional! Confira meus projetos, habilidades e mais sobre minha carreira." />
-    <meta name="twitter:image" content="hhttps://andreo.dev/src/components/img/port-main.png" /> <!-- Substitua com o link para sua imagem de preview -->
-    <meta name="twitter:creator" content="@andreodev" /> <!-- Coloque seu nome de usuário do Twitter -->
+    <meta name="twitter:title" content="Andreo Henrique | Frontend Software Engineer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Frontend Software Engineer focused on fintech products, marketplace flows, scalable interfaces, and thoughtful user experiences."
+    />
+    <meta name="twitter:image" content="https://www.andreodev.com.br/port-main.png" />
+    <meta name="twitter:image:alt" content="Portfolio preview of Andreo Henrique" />
+    <meta name="twitter:creator" content="@andreodev" />
 
-    <!-- Definir fonte padrão do site -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Título da página -->
-    <title>Andreo Henrique | Portfólio</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Andreo Henrique",
+        "url": "https://www.andreodev.com.br/",
+        "image": "https://www.andreodev.com.br/port-main.png",
+        "jobTitle": "Frontend Software Engineer",
+        "description": "Frontend Software Engineer focused on fintech products, marketplace flows, scalable interfaces, and thoughtful user experiences.",
+        "email": "mailto:developerandreo@gmail.com",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Wite Group"
+        },
+        "sameAs": [
+          "https://github.com/andreodev",
+          "https://www.linkedin.com/in/andreo-henrique/",
+          "https://www.instagram.com/andreowdev"
+        ],
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Node.js",
+          "Fintech",
+          "Marketplace",
+          "Frontend Architecture",
+          "Web Performance"
+        ]
+      }
+    </script>
+
+    <script>
+      (function () {
+        try {
+          var storedTheme = localStorage.getItem("andreo@theme");
+          var theme = storedTheme === "light" || storedTheme === "dark" ? storedTheme : "dark";
+          document.documentElement.dataset.theme = theme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
   </head>
   <body>
-    <!-- O conteúdo da sua página será carregado aqui -->
     <div id="root"></div>
-    
-    <!-- O seu script principal -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

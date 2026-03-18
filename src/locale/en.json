@@ -1,12 +1,12 @@
 {
   "Info": {
     "name": "Andreo Henrique",
-    "dev": "Front-End Developer",
-    "ativo": "Front-End Developer with experience in web and mobile solutions. 📍 Manaus | React • React Native • TypeScript • Node.js"
+    "dev": "Frontend Software Engineer",
+    "ativo": ""
   },
   "About": {
-    "title": "👨‍💻About me",
-    "sobre": "Front-End Developer with hands-on experience in web and mobile solutions development. I had the opportunity to work at Witegroup, contributing to modern interfaces and scalable digital experiences. I also have previous experience as a full-stack developer at Inovstar from GRUPO NFA, developing solutions with React.js, React Native, and Node.js. Proficient in technologies such as React, React Native, TypeScript, Next.js, SQL, and MongoDB. I continuously seek to evolve technically and participate in projects that generate real impact. I'm driven by curiosity, initiative, and willingness to learn."
+    "title": "👨‍💻 About me",
+    "sobre": "Frontend Software Engineer with experience building complex web applications across marketplace platforms, payment gateway flows, and financial solutions. I currently work at Wite Group, contributing directly to the development and evolution of a fintech platform. I also bring a full-stack background, a degree in Systems Analysis and Development, and a strong focus on code quality, scalability, performance, and user experience. I'm driven by continuous learning, collaboration, and delivering solutions with real impact."
   },
   "Socials": {
     "Discord": "https://discord.gg/7Xw79guB",
@@ -14,12 +14,12 @@
     "Linkedin": "https://www.linkedin.com/in/andreo-henrique/",
     "Github": "https://github.com/andreodev",
     "Instagram": "https://www.instagram.com/andreowdev",
-    "Whatsapp": "https://api.whatsapp.com/send/?phone=92991784771&text&type=phone_number&app_absent=0"
+    "Whatsapp": ""
   },
   "Projects": {
     "Project1": {
       "title": "My Portfolio",
-      "description": "This is my personal website, the one you’re currently on :). Built with React, Tailwind, and APIs.",
+      "description": "This is my personal website, where I present selected projects, experience, and the way I like to build products. Built with React, Tailwind CSS, and API integrations.",
       "repoLink": "https://github.com/andreodev/port-main",
       "siteLink": "https://andreodev.com.br",
       "imageLink": "https://andreodev.com.br",
@@ -27,7 +27,7 @@
     },
     "Project2": {
       "title": "Restaurant Management",
-      "description": "This is a restaurant management and service system project called HEST. Developed with React, Node, Tailwind, MySQL.",
+      "description": "A restaurant management and service system focused on operations, order flow, and user experience. Built with React, Node.js, Tailwind CSS, and MySQL.",
       "repoLink": "https://github.com/leonfritas/app-restaurante",
       "siteLink": "#",
       "imageLink": "https://github.com/leonfritas/app-restaurante",
@@ -51,7 +51,7 @@
     },
     "Project5": {
       "title": "Planno Landing Page",
-      "description": "💼 I created this landing page using Vite + React, focusing on performance, responsiveness, and a clear user experience. It introduces Planno, a personal finance control solution, in a modern and attractive way. 🚀",
+      "description": "💼 I built this landing page with Vite + React, focusing on performance, responsiveness, and a clear user experience. It presents Planno, a personal finance management solution, in a modern and engaging way. 🚀",
       "repoLink": "https://github.com/andreodev/Plano-Controle-financeiro",
       "siteLink": "https://www.plannofinancas.com.br/",
       "imageLink": "https://www.plannofinancas.com.br/",
@@ -59,14 +59,14 @@
     },
     "Project6": {
       "title": "🌸 Takusan - Discover Animes",
-      "description": "🎌 Takusan is a web app that lets you explore the most popular animes, view full details like trailers, characters, and genres, and navigate a modern and animated UI. Built with React, Vite, TailwindCSS, GraphQL, and Framer Motion, this project focuses on user experience and performance.",
+      "description": "🎌 Takusan is a web app that lets you explore popular anime, view full details such as trailers, characters, and genres, and navigate a modern, animated UI. Built with React, Vite, Tailwind CSS, GraphQL, and Framer Motion, this project focuses on user experience and performance.",
       "repoLink": "https://github.com/andreodev/Takusan",
       "siteLink": "https://takusan.vercel.app/",
       "imageLink": "https://takusan.vercel.app/",
       "image": "six"
     }
   },
-  "Spotify": "Last song played on my ",
+  "Spotify": "Last track played on my ",
   "Contact": {
     "title": "Contact",
     "placeholderName": "Enter your name:",

@@ -1,24 +1,32 @@
-import HeaderFinal from "../components/Header/index.jsx";
-import "./home.css";
-import Projects from '../components/Projects/Projects.jsx'
-import Footer from "../components/footer/footer.jsx";
-import '../i18n.js'
+import PortfolioShell from "../components/portfolio/PortfolioShell.jsx";
+import ProjectPreviewCard from "../components/portfolio/ProjectPreviewCard.jsx";
+import { usePortfolioContent } from "../components/portfolio/usePortfolioContent.js";
 
 export default function Projetos() {
-  console.log("Bem vindo Dev curioso 😂")
+  const content = usePortfolioContent();
+
   return (
-    <div className=" flex flex-col items-center text-white py-14 px-4">
-      <div className="max-w-screen-lg w-full rounded-lg ml-2">
-      <HeaderFinal />
-      </div>
-        <main>
-          <div className="flex flex-col justify-between mt-8">
-              <Projects />  
-          </div>
-        </main>
-        <div className="  justify-center mt-8">
-            <Footer />
+    <PortfolioShell>
+      <div className="mx-auto max-w-5xl px-2">
+        <section className="mb-10 max-w-3xl">
+          <p className="mb-4 text-xs uppercase tracking-[0.28em] text-[var(--muted)]">
+            {content.sectionLabels.projects}
+          </p>
+          <h1 className="mixed-title text-4xl text-[var(--fg)] sm:text-5xl">
+            <span className="portfolio-serif italic">{content.pageHeadings.projects.accent}</span>{" "}
+            <span className="text-[var(--muted-strong)]">{content.pageHeadings.projects.rest}</span>
+          </h1>
+          <p className="mt-5 text-sm leading-7 text-[var(--muted)] sm:text-base">
+            {content.pageHeadings.projects.description}
+          </p>
+        </section>
+
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          {content.projects.map((project) => (
+            <ProjectPreviewCard key={project.title} project={project} />
+          ))}
         </div>
-    </div>
+      </div>
+    </PortfolioShell>
   );
 }

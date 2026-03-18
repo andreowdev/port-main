@@ -1,12 +1,12 @@
 {
   "Info": {
   "name": "Andreo Henrique",
-  "dev": "Desenvolvedor Front-End",
-  "ativo": "Desenvolvedor Front-End com experiência em soluções web e mobile. 📍 Manaus | React • React Native • TypeScript • Node.js"
+  "dev": "Frontend Software Engineer",
+  "ativo": "Frontend Software Engineer com experiência em aplicações web complexas, marketplaces e soluções financeiras. 📍 Manaus | React • TypeScript • Next.js • Node.js"
   },
   "About": {
-  "title": "👨‍💻Sobre mim",
-  "sobre": "Desenvolvedor Front-End com experiência prática no desenvolvimento de soluções web e mobile. Tive a oportunidade de atuar na Witegroup, onde contribuí para o desenvolvimento de interfaces modernas e experiências digitais escaláveis. Também possuo experiência anterior como desenvolvedor full stack na Inovstar do GRUPO NFA, desenvolvendo soluções com React.js, React Native e Node.js. Domínio de tecnologias como React, React Native, TypeScript, Next.js, SQL e MongoDB. Busco continuamente evoluir tecnicamente e participar de projetos que gerem impacto real. Sou movido por curiosidade, iniciativa e vontade de aprender."
+  "title": "👨‍💻 Sobre mim",
+  "sobre": "Frontend Software Engineer com experiência no desenvolvimento de aplicações web complexas, com atuação em plataformas de marketplace, gateways de pagamento e soluções financeiras. Atualmente, trabalho na Wite Group, contribuindo diretamente para a construção e evolução de uma plataforma fintech. Tenho background full stack, formação em Análise e Desenvolvimento de Sistemas e forte foco em qualidade de código, escalabilidade, performance e experiência do usuário. Sou movido por aprendizado contínuo, colaboração em equipe e entrega de soluções com impacto real."
   },
   "Socials": {
     "Discord": "https://discord.gg/7Xw79guB",
@@ -19,7 +19,7 @@
   "Projects": {
     "Project1": {
       "title": "Meu Portfólio",
-      "description": "Este é o meu site pessoal, é o site em que você está atualmente :). Desenvolvido em React, Tailwind, APIs.",
+      "description": "Este é o meu site pessoal, onde apresento meus projetos, minha experiência e minha forma de trabalhar. Desenvolvido com React, Tailwind CSS e integrações de API.",
       "repoLink": "https://github.com/andreodev/port-main",
       "siteLink": "https://andreodev.com.br",
       "imageLink": "https://andreodev.com.br",
@@ -27,7 +27,7 @@
     },
     "Project2": {
       "title": "Gerenciamento de Restaurante",
-      "description": "Este é um projeto de um sistema de gerenciamento e atendimento de restaurante, HEST é o seu nome. Desenvolvido com React, Node, Tailwind, MySQL.",
+      "description": "Sistema de gerenciamento e atendimento para restaurantes, com foco em operação, organização de pedidos e experiência do usuário. Desenvolvido com React, Node.js, Tailwind CSS e MySQL.",
       "repoLink": "https://github.com/leonfritas/app-restaurante",
       "siteLink": "#",
       "imageLink": "https://github.com/leonfritas/app-restaurante",
@@ -51,7 +51,7 @@
     },
     "Project5": {
       "title": "Landing Page Planno",
-      "description": "💼 Desenvolvi essa landing page com Vite + React, focando em performance, responsividade e uma experiência clara para o usuário. O objetivo foi apresentar o Planno, uma solução de controle financeiro pessoal, de forma atrativa, moderna e informativa. 🚀",
+      "description": "💼 Desenvolvi esta landing page com Vite + React, focando em performance, responsividade e uma experiência clara para o usuário. O objetivo foi apresentar o Planno, uma solução de controle financeiro pessoal, de forma atrativa, moderna e informativa. 🚀",
       "repoLink": "https://github.com/andreodev/Plano-Controle-financeiro",
       "siteLink": "https://www.plannofinancas.com.br/",
       "imageLink": "https://www.plannofinancas.com.br/",
@@ -66,11 +66,11 @@
       "image": "six"
     }
   },
-  "Spotify": "Última musica tocada em meu ",
+  "Spotify": "Última música tocada no meu ",
   "Contact": {
     "title": "Contato",
     "placeholderName": "Digite seu nome:",
-    "placeholderEmail": "Digite seu email",
+    "placeholderEmail": "Digite seu e-mail",
     "placeholderMessage": "Digite sua mensagem",
     "submitButton": "ENVIAR"
   },
