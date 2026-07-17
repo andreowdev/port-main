@@ -13,57 +13,41 @@
     "Gmail": "mailto:developerandreo@gmail.com",
     "Linkedin": "https://www.linkedin.com/in/andreo-henrique/",
     "Github": "https://github.com/andreodev",
-    "Instagram": "https://www.instagram.com/andreowdev",
+    "Instagram": "https://www.instagram.com/andreodevv",
     "Whatsapp": ""
   },
   "Projects": {
     "Project1": {
-      "title": "My Portfolio",
-      "description": "This is my personal website, where I present selected projects, experience, and the way I like to build products. Built with React, Tailwind CSS, and API integrations.",
-      "repoLink": "https://github.com/andreodev/port-main",
-      "siteLink": "https://andreodev.com.br",
-      "imageLink": "https://andreodev.com.br",
-      "image": "one"
-    },
-    "Project2": {
-      "title": "Restaurant Management",
-      "description": "A restaurant management and service system focused on operations, order flow, and user experience. Built with React, Node.js, Tailwind CSS, and MySQL.",
-      "repoLink": "https://github.com/leonfritas/app-restaurante",
-      "siteLink": "#",
-      "imageLink": "https://github.com/leonfritas/app-restaurante",
-      "image": "two"
-    },
-    "Project3": {
       "title": "FoodBoxd",
       "description": "FoodBoxd is a menu and review management system for cafeterias, developed in React Native with Firebase integration. It allows managers to create and edit daily/weekly menus, monitor user feedback, and view performance charts. Users can check menus, rate meals, and view nutritional info.",
       "repoLink": "https://github.com/andreodev/FoodBox/tree/main",
       "siteLink": "#",
       "imageLink": "https://github.com/andreodev/FoodBox/tree/main",
-      "image": "three"
+      "image": "one"
     },
-    "Project4": {
-      "title": "Blog Viewreo",
-      "description": "I built a full-stack blog using Next.js, MongoDB, NextAuth, and Prisma. Users can securely authenticate, create and view posts, and interact with content. The solution features authentication with NextAuth, data management with MongoDB and Prisma, and a responsive UI built with React. Tech stack: Next.js, React, MongoDB, NextAuth, Prisma.",
-      "repoLink": "https://github.com/andreodev/blog-Next",
-      "siteLink": "https://blog-viewreo.vercel.app/",
-      "imageLink": "https://blog-viewreo.vercel.app/",
-      "image": "four"
-    },
-    "Project5": {
-      "title": "Planno Landing Page",
-      "description": "💼 I built this landing page with Vite + React, focusing on performance, responsiveness, and a clear user experience. It presents Planno, a personal finance management solution, in a modern and engaging way. 🚀",
-      "repoLink": "https://github.com/andreodev/Plano-Controle-financeiro",
-      "siteLink": "https://www.plannofinancas.com.br/",
-      "imageLink": "https://www.plannofinancas.com.br/",
-      "image": "five"
-    },
-    "Project6": {
+    "Project2": {
       "title": "🌸 Takusan - Discover Animes",
       "description": "🎌 Takusan is a web app that lets you explore popular anime, view full details such as trailers, characters, and genres, and navigate a modern, animated UI. Built with React, Vite, Tailwind CSS, GraphQL, and Framer Motion, this project focuses on user experience and performance.",
       "repoLink": "https://github.com/andreodev/Takusan",
       "siteLink": "https://takusan.vercel.app/",
       "imageLink": "https://takusan.vercel.app/",
-      "image": "six"
+      "image": "two"
+    },
+    "Project3": {
+      "title": "Multi-Tenant Workshop Management System",
+      "description": "A full-stack multi-tenant platform designed for automotive workshops, featuring customer and vehicle management, service orders, scheduling, inventory control, point of sale, and financial management with a scalable architecture.",
+      "repoLink": "https://github.com/andreodev/car-workshop",
+      "siteLink": "#",
+      "imageLink": "#",
+      "image": "three"
+    },
+    "Project4": {
+      "title": "Sentinel",
+      "description": "A scalable Go API for secure payment webhook processing, idempotency, and real-time fraud risk scoring using rule-based analysis.",
+      "repoLink": "https://github.com/andreodev/go-pay",
+      "siteLink": "#",
+      "imageLink": "#",
+      "image": "four"
     }
   },
   "Spotify": "Last track played on my ",

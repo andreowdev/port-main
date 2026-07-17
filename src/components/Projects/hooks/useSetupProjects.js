@@ -1,12 +1,10 @@
 import { useTranslation } from "react-i18next";
-import one from "../../img/projetos/p1.webp";
-import two from "../../img/projetos/p3.png";
-import three from "../../img/projetos/p4.webp";
-import four from "../../img/projetos/pj5.png";
-import five from "../../img/projetos/pj6.png";
-import six from "../../img/projetos/pj7.png";
+import foodbox from "../../img/projetos/p4.webp";
+import takusan from "../../img/projetos/pj7.png";
+import oficina from "../../img/projetos/workshop.jpeg";
+import sentinel from "../../img/projetos/sentinel.png";
 
-const images = [one, two, three, four, five, six];
+const images = [foodbox, takusan, oficina, sentinel];
 
 export function useSetupProjects() {
   const { t } = useTranslation();

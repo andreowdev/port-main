@@ -93,7 +93,7 @@ export function usePortfolioContent() {
         description: "behind the scenes and updates",
         href: t("Socials.Instagram"),
         label: "instagram",
-        value: "@andreowdev",
+        value: "@andreodevv",
       },
     ],
     contactCopy: {
@@ -156,7 +156,7 @@ export function usePortfolioContent() {
           ],
           location: "Rio de Janeiro, Brazil · Remote",
           period: "JUL 2025 - PRESENT",
-          role: "Full Stack Software Engineer",
+          role: "Frontend Software Engineer",
           stack: ["React.js", "TypeScript", "REST APIs", "Dashboards", "Marketplace", "BaaS"],
           type: "Full-time",
         },

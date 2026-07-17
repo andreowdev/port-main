@@ -1,69 +1,53 @@
 {
   "Info": {
-  "name": "Andreo Henrique",
-  "dev": "Full Stack Software Engineer",
-  "ativo": "Full Stack Software Engineer com experiência em aplicações web complexas, marketplaces e soluções financeiras. 📍 Manaus | React • TypeScript • Next.js • Node.js"
+    "name": "Andreo Henrique",
+    "dev": "Full Stack Software Engineer",
+    "ativo": "Full Stack Software Engineer com experiência em aplicações web complexas, marketplaces e soluções financeiras. 📍 Manaus | React • TypeScript • Next.js • Node.js"
   },
   "About": {
-  "title": "👨‍💻 Sobre mim",
-  "sobre": "Full Stack Software Engineer com experiência no desenvolvimento de aplicações web complexas, com atuação em plataformas de marketplace, gateways de pagamento e soluções financeiras. Atualmente, trabalho na Wite Group, contribuindo diretamente para a construção e evolução de uma plataforma fintech. Tenho formação em Análise e Desenvolvimento de Sistemas e forte foco em qualidade de código, escalabilidade, performance e experiência do usuário. Sou movido por aprendizado contínuo, colaboração em equipe e entrega de soluções com impacto real."
+    "title": "👨‍💻 Sobre mim",
+    "sobre": "Full Stack Software Engineer com experiência no desenvolvimento de aplicações web complexas, com atuação em plataformas de marketplace, gateways de pagamento e soluções financeiras. Atualmente, trabalho na Wite Group, contribuindo diretamente para a construção e evolução de uma plataforma fintech. Tenho formação em Análise e Desenvolvimento de Sistemas e forte foco em qualidade de código, escalabilidade, performance e experiência do usuário. Sou movido por aprendizado contínuo, colaboração em equipe e entrega de soluções com impacto real."
   },
   "Socials": {
     "Discord": "https://discord.gg/7Xw79guB",
     "Gmail": "mailto:developerandreo@gmail.com",
     "Linkedin": "https://www.linkedin.com/in/andreo-henrique/",
     "Github": "https://github.com/andreodev",
-    "Instagram": "https://www.instagram.com/andreowdev",
+    "Instagram": "https://www.instagram.com/andreodevv",
     "Whatsapp": "https://api.whatsapp.com/send/?phone=92991784771&text&type=phone_number&app_absent=0"
   },
   "Projects": {
     "Project1": {
-      "title": "Meu Portfólio",
-      "description": "Este é o meu site pessoal, onde apresento meus projetos, minha experiência e minha forma de trabalhar. Desenvolvido com React, Tailwind CSS e integrações de API.",
-      "repoLink": "https://github.com/andreodev/port-main",
-      "siteLink": "https://andreodev.com.br",
-      "imageLink": "https://andreodev.com.br",
-      "image": "one"
-    },
-    "Project2": {
-      "title": "Gerenciamento de Restaurante",
-      "description": "Sistema de gerenciamento e atendimento para restaurantes, com foco em operação, organização de pedidos e experiência do usuário. Desenvolvido com React, Node.js, Tailwind CSS e MySQL.",
-      "repoLink": "https://github.com/leonfritas/app-restaurante",
-      "siteLink": "#",
-      "imageLink": "https://github.com/leonfritas/app-restaurante",
-      "image": "two"
-    },
-    "Project3": {
       "title": "FoodBoxd",
       "description": "FoodBoxd é um sistema de gestão de cardápios e avaliações para refeitórios, desenvolvido em React Native com integração ao Firebase. Permite que gestores cadastrem e editem cardápios diários e semanais, acompanhem avaliações dos usuários e visualizem gráficos de desempenho. Usuários podem consultar o cardápio, avaliar refeições e visualizar informações nutricionais.",
       "repoLink": "https://github.com/andreodev/FoodBox/tree/main",
       "siteLink": "#",
       "imageLink": "https://github.com/andreodev/FoodBox/tree/main",
-      "image": "three"
+      "image": "one"
     },
-    "Project4": {
-      "title": "Blog Viewreo",
-      "description": "Desenvolvi um blog full-stack utilizando Next.js, MongoDB, NextAuth e Prisma. A aplicação permite que os usuários se autentiquem de forma segura, criem e visualizem posts, além de interagir com os conteúdos. A solução implementa autenticação baseada em NextAuth, armazenamento e gerenciamento de dados com MongoDB e Prisma, garantindo uma experiência fluida e segura. A interface é construída com React, sendo responsiva e otimizada para todos os dispositivos. Techs: Next.js, React, MongoDB, NextAuth, Prisma.",
-      "repoLink": "https://github.com/andreodev/blog-Next",
-      "siteLink": "https://blog-viewreo.vercel.app/",
-      "imageLink": "https://blog-viewreo.vercel.app/",
-      "image": "four"
-    },
-    "Project5": {
-      "title": "Landing Page Planno",
-      "description": "💼 Desenvolvi esta landing page com Vite + React, focando em performance, responsividade e uma experiência clara para o usuário. O objetivo foi apresentar o Planno, uma solução de controle financeiro pessoal, de forma atrativa, moderna e informativa. 🚀",
-      "repoLink": "https://github.com/andreodev/Plano-Controle-financeiro",
-      "siteLink": "https://www.plannofinancas.com.br/",
-      "imageLink": "https://www.plannofinancas.com.br/",
-      "image": "five"
-    },
-    "Project6": {
+    "Project2": {
       "title": "🌸 Takusan - Descubra Animes",
       "description": "🎌 Takusan é uma aplicação web que permite explorar os animes mais populares do momento, visualizar detalhes completos como trailer, personagens e gêneros, e navegar por uma UI moderna e animada. Desenvolvido com React, Vite, TailwindCSS, GraphQL e Framer Motion, faz parte do meu portfólio com foco em experiência de usuário e performance.",
       "repoLink": "https://github.com/andreodev/Takusan",
       "siteLink": "https://takusan.vercel.app/",
       "imageLink": "https://takusan.vercel.app/",
-      "image": "six"
+      "image": "two"
+    },
+    "Project3": {
+      "title": "Sistema de Gestão para Oficinas Multi-Tenant",
+      "description": "Uma plataforma full-stack multi-tenant desenvolvida para oficinas automotivas, com gestão de clientes e veículos, ordens de serviço, agendamentos, controle de estoque, ponto de venda e gerenciamento financeiro em uma arquitetura escalável.",
+      "repoLink": "https://github.com/andreodev/car-workshop",
+      "siteLink": "#",
+      "imageLink": "#",
+      "image": "three"
+    },
+    "Project4": {
+      "title": "Sentinel",
+      "description": "Uma API escalável desenvolvida em Go para processamento seguro de webhooks de pagamento, prevenção de eventos duplicados e análise de risco antifraude em tempo real baseada em regras de negócio.",
+      "repoLink": "https://github.com/andreodev/go-pay",
+      "siteLink": "#",
+      "imageLink": "#",
+      "image": "four"
     }
   },
   "Spotify": "Última música tocada no meu ",
