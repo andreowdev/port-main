@@ -149,6 +149,19 @@ img {
   background: var(--xp-wallpaper);
 }
 
+@media (max-width: 520px) {
+  .portfolio-main {
+    display: grid;
+    justify-items: center;
+    max-width: 23rem !important;
+    padding-inline: 0.5rem !important;
+  }
+
+  .portfolio-main > * {
+    width: min(100%, 22rem);
+  }
+}
+
 .portfolio-shell > footer {
   --fg: #ffffff;
   --muted: rgba(255, 255, 255, 0.82);
@@ -156,6 +169,12 @@ img {
   --panel: rgba(115, 169, 255, 0.34);
   background: linear-gradient(180deg, #4f93ff 0%, #2464d8 16%, #1d55bd 56%, #17449b 100%);
   color: #ffffff;
+}
+
+@media (max-width: 520px) {
+  .portfolio-shell > footer {
+    position: static;
+  }
 }
 
 .site-dock {
@@ -284,6 +303,47 @@ img {
 
 .site-window-controls i:nth-child(3) {
   background: linear-gradient(180deg, #ffb08f, #ec5a36 50%, #b91f12);
+}
+
+@media (max-width: 520px) {
+  .site-dock {
+    padding: 0.45rem 0.6rem 0;
+  }
+
+  .site-dock-inner {
+    gap: 0.2rem;
+    padding: 0.18rem;
+  }
+
+  .site-brand,
+  .site-lang,
+  .site-nav-link {
+    height: 1.85rem;
+  }
+
+  .site-brand {
+    width: 2rem;
+    min-width: 2rem;
+    padding: 0;
+  }
+
+  .site-brand span {
+    display: none;
+  }
+
+  .site-nav {
+    padding-inline: 0.1rem;
+  }
+
+  .site-nav-link {
+    padding: 0 0.62rem;
+    font-size: 0.72rem;
+  }
+
+  .site-lang {
+    min-width: 2.35rem;
+    padding: 0 0.45rem;
+  }
 }
 
 @media (min-width: 620px) {
@@ -636,7 +696,7 @@ img {
 }
 
 .aqua-hero-window {
-  width: min(100%, 58rem);
+  width: 100%;
   justify-self: center;
   border-color: #1757bb;
   background: #eaf2ff;
@@ -734,6 +794,89 @@ img {
   display: inline-flex;
 }
 
+.aqua-hero-main .aqua-actions {
+  flex-wrap: nowrap;
+}
+
+.aqua-hero-main .aqua-actions a {
+  min-width: 13.5rem;
+  padding-inline: 1.45rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 520px) {
+  .aqua-hero {
+    min-height: auto;
+    align-items: start;
+  }
+
+  .aqua-hero-layout {
+    gap: 0.8rem;
+    padding: 0.85rem;
+  }
+
+  .aqua-hero-main,
+  .aqua-hero-readme {
+    gap: 0.85rem;
+  }
+
+  .aqua-hero-badge {
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .aqua-profile-avatar {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .aqua-hero-badge > span {
+    overflow-wrap: anywhere;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+  }
+
+  .aqua-hero h1 {
+    max-width: 9ch;
+    font-size: clamp(2.25rem, 12vw, 2.9rem);
+  }
+
+  .aqua-hero-lead {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .aqua-actions {
+    width: 100%;
+    gap: 0.65rem;
+  }
+
+  .aqua-hero-main .aqua-actions {
+    flex-wrap: wrap;
+  }
+
+  .aqua-actions a {
+    width: 100%;
+    min-height: 2.85rem;
+    padding: 0.65rem 1rem;
+    font-size: 1rem;
+  }
+
+  .aqua-hero-readme {
+    padding-top: 0.8rem;
+  }
+
+  .aqua-hero-readme p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .aqua-hero-readme small {
+    display: none;
+  }
+}
+
 .aqua-panel {
   overflow: hidden;
   border: 1px solid #9ea8b6;
@@ -752,6 +895,19 @@ img {
 .aqua-experience {
   display: grid;
   gap: 1rem;
+}
+
+@media (max-width: 520px) {
+  .aqua-home,
+  .aqua-section,
+  .aqua-grid,
+  .aqua-projects,
+  .aqua-panel,
+  .aqua-project-card {
+    width: 100%;
+    max-width: 100%;
+    justify-self: center;
+  }
 }
 
 .aqua-grid {
@@ -1271,6 +1427,76 @@ img {
   overflow-x: auto;
 }
 
+@media (max-width: 520px) {
+  .aqua-section {
+    justify-items: center;
+  }
+
+  .aqua-section-heading {
+    width: min(100%, 21.5rem);
+  }
+
+  .aqua-section-heading h2 {
+    max-width: 10ch;
+    font-size: clamp(2.35rem, 11vw, 2.9rem);
+    text-align: center;
+  }
+
+  .aqua-experience-tabs {
+    width: min(100%, 21.5rem);
+    align-items: stretch;
+  }
+
+  .aqua-tabs-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+    border-radius: 9px;
+  }
+
+  .aqua-tabs-list [data-slot="tabs-trigger"] {
+    min-width: 0;
+    padding: 0.5rem 0.55rem;
+    white-space: normal;
+  }
+
+  .aqua-tabs-list [data-slot="tabs-trigger"]:first-child {
+    border-radius: 9px 0 0 0;
+  }
+
+  .aqua-tabs-list [data-slot="tabs-trigger"]:nth-child(2) {
+    border-radius: 0 9px 0 0;
+  }
+
+  .aqua-tabs-list [data-slot="tabs-trigger"]:nth-last-child(2) {
+    border-radius: 0 0 0 9px;
+  }
+
+  .aqua-tabs-list [data-slot="tabs-trigger"]:last-child {
+    border-radius: 0 0 9px 0;
+  }
+
+  .aqua-experience-content {
+    width: 100%;
+    padding: 1rem;
+    padding-top: 1.25rem;
+  }
+
+  .aqua-experience-content .aqua-card-inner {
+    padding: 0;
+  }
+
+  .aqua-experience-content h3 {
+    font-size: clamp(1.55rem, 8vw, 2rem);
+  }
+
+  .aqua-experience-content p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+}
+
 @media (min-width: 768px) {
   .aqua-grid,
   .aqua-experience {
@@ -1278,7 +1504,7 @@ img {
   }
 
   .aqua-hero-layout {
-    grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+    grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
     align-items: center;
   }
 

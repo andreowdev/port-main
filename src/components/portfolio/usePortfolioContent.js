@@ -51,7 +51,7 @@ export function usePortfolioContent() {
     primaryCta: "ver currículo",
     secondaryCta: "ver contato",
     summary:
-      "Full Stack Software Engineer focado em qualidade de código, escalabilidade, performance e experiência do usuário.",
+      "Full Stack Software Engineer com experiência no desenvolvimento de plataformas financeiras, aplicações SaaS e sistemas web escaláveis.",
     spotifyFallbackMessage: "A atividade do Spotify está indisponível no momento.",
     spotifyLabel: "ouvindo",
     spotifyPlayedAtPrefix: "tocada às",
@@ -111,7 +111,7 @@ export function usePortfolioContent() {
     primaryCta: "view resume",
     secondaryCta: "view contact",
     summary:
-      "Full Stack Software Engineer focused on code quality, scalability, performance, and user experience.",
+      "Full Stack Software Engineer with experience developing financial platforms, SaaS applications, and scalable web systems.",
     spotifyFallbackMessage: "Spotify activity is unavailable right now.",
     spotifyLabel: "listening",
     spotifyPlayedAtPrefix: "played at",

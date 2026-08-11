@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="aqua-section">
+        <section className="aqua-section aqua-experience-section">
           <SpotifyPanel copy={content.spotify} />
         </section>
 
@@ -132,7 +132,7 @@ export default function Home() {
             <h2>{content.experience.titleAccent} {content.experience.titleRest}</h2>
           </div>
 
-          <Tabs value={String(activeJob)} onValueChange={(value) => setActiveJob(Number(value))}>
+          <Tabs className="aqua-experience-tabs" value={String(activeJob)} onValueChange={(value) => setActiveJob(Number(value))}>
             <TabsList className="aqua-tabs-list">
               {content.experience.items.map((item, index) => (
                 <TabsTrigger
@@ -145,7 +145,7 @@ export default function Home() {
             </TabsList>
 
             {content.experience.items.map((job, index) => (
-              <TabsContent key={`${job.company}-${job.period}`} value={String(index)}>
+              <TabsContent className="aqua-experience-content" key={`${job.company}-${job.period}`} value={String(index)}>
                 <div className="aqua-card-inner">
                   <span>{job.period}</span>
                   <h3>{job.role}</h3>
