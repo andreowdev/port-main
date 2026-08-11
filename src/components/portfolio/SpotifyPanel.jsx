@@ -56,32 +56,23 @@ export default function SpotifyPanel({ copy }) {
   const playedAtLabel = useMemo(() => formatPlayedAt(track?.playedAt), [track?.playedAt]);
 
   return (
-    <div className="border border-[var(--line)] bg-[var(--panel)] p-5 backdrop-blur-md sm:p-6">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <p className="text-xs uppercase tracking-[0.28em] text-[var(--muted)]">{copy.label}</p>
-          <h3 className="mt-3 text-2xl text-[var(--fg)]">
-            <span className="portfolio-serif italic">{copy.titleAccent}</span>{" "}
-            <span className="text-[var(--muted-strong)]">{copy.titleRest}</span>
-          </h3>
-          <p className="mt-3 max-w-xl text-sm leading-7 text-[var(--muted)]">{copy.description}</p>
-        </div>
-
-        <a
-          href={copy.profileHref}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex shrink-0 items-center gap-2 border border-[var(--line)] px-3 py-2 text-xs uppercase tracking-[0.18em] text-[var(--muted)] transition-all duration-200 hover:border-[var(--line-strong)] hover:text-[var(--fg)] focus-visible:border-[var(--line-strong)] focus-visible:text-[var(--fg)] focus:outline-none"
-        >
-          spotify
-          <ArrowUpRight size={14} />
+    <div className="aqua-panel spotify-window">
+      <div className="aqua-window-title">
+        <span>{copy.titleAccent} {copy.titleRest}</span>
+        <a href={copy.profileHref} target="_blank" rel="noreferrer">
+          spotify <ArrowUpRight size={12} />
         </a>
       </div>
 
-      <div className="mt-6 border border-[var(--line)] bg-[var(--panel-solid)] p-4 sm:p-5">
+      <div className="spotify-window-body">
+        <div className="spotify-window-copy">
+          <span>{copy.label}</span>
+          <p>{copy.description}</p>
+        </div>
+
         {status === "loading" ? (
-          <div className="grid gap-4 sm:grid-cols-[96px_1fr]">
-            <div className="aspect-square animate-pulse bg-[var(--line)]" />
+          <div className="spotify-track">
+            <div className="spotify-cover animate-pulse bg-[var(--line)]" />
             <div className="space-y-3">
               <div className="h-3 w-24 animate-pulse bg-[var(--line)]" />
               <div className="h-6 w-2/3 animate-pulse bg-[var(--line)]" />
@@ -90,16 +81,16 @@ export default function SpotifyPanel({ copy }) {
             </div>
           </div>
         ) : status === "error" || !track ? (
-          <div className="flex flex-col gap-3 text-sm text-[var(--muted)]">
-            <span className="inline-flex w-fit items-center gap-2 border border-[var(--line)] px-3 py-1 text-xs uppercase tracking-[0.18em]">
+          <div className="spotify-empty">
+            <span>
               <Disc3 size={14} />
               spotify
             </span>
             <p>{track?.message || copy.fallbackMessage}</p>
           </div>
         ) : (
-          <div className="grid gap-4 sm:grid-cols-[112px_1fr]">
-            <div className="overflow-hidden border border-[var(--line)] bg-[var(--panel)]">
+          <div className="spotify-track">
+            <div className="spotify-cover">
               {track.albumImage ? (
                 <img
                   src={track.albumImage}
@@ -107,49 +98,48 @@ export default function SpotifyPanel({ copy }) {
                   className="aspect-square h-full w-full object-cover"
                 />
               ) : (
-                <div className="flex aspect-square items-center justify-center text-[var(--muted)]">
+                <div>
                   <Disc3 size={24} />
                 </div>
               )}
             </div>
 
-            <div>
-              <div className="flex flex-wrap items-center gap-2">
+            <div className="spotify-track-info">
+              <div className="spotify-status-row">
                 <span
                   className={[
-                    "inline-flex items-center gap-2 border px-2.5 py-1 text-[11px] uppercase tracking-[0.18em]",
+                    "spotify-status",
                     track.status === "playing"
-                      ? "border-emerald-400/40 text-emerald-300"
-                      : "border-[var(--line)] text-[var(--muted)]",
+                      ? "spotify-status-playing"
+                      : "",
                   ].join(" ")}
                 >
                   <span
                     className={[
-                      "h-1.5 w-1.5 rounded-full",
-                      track.status === "playing" ? "bg-emerald-300" : "bg-[var(--muted)]",
+                      "spotify-dot",
+                      track.status === "playing" ? "spotify-dot-playing" : "",
                     ].join(" ")}
                   />
                   {track.status === "playing" ? copy.playingLabel : copy.recentLabel}
                 </span>
 
                 {playedAtLabel && track.status !== "playing" ? (
-                  <span className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+                  <span className="spotify-played-at">
                     {copy.playedAtPrefix} {playedAtLabel}
                   </span>
                 ) : null}
               </div>
 
-              <h4 className="mt-4 text-xl text-[var(--fg)]">{track.name}</h4>
-              <p className="mt-1 text-sm text-[var(--muted-strong)]">{track.artists}</p>
-              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{track.album}</p>
+              <h4>{track.name}</h4>
+              <p>{track.artists}</p>
+              <small>{track.album}</small>
 
-              <div className="mt-5 flex flex-wrap gap-3">
+              <div className="spotify-actions">
                 {track.externalUrl ? (
                   <a
                     href={track.externalUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:text-[var(--fg)] focus:outline-none"
                   >
                     {copy.trackLinkLabel}
                     <ArrowUpRight size={14} />
@@ -160,7 +150,6 @@ export default function SpotifyPanel({ copy }) {
                   href={copy.profileHref}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-[var(--muted)] transition-colors hover:text-[var(--fg)] focus-visible:text-[var(--fg)] focus:outline-none"
                 >
                   {copy.profileLabel}
                   <ArrowUpRight size={14} />

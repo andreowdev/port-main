@@ -2,7 +2,7 @@
   "Info": {
     "name": "Andreo Henrique",
     "dev": "Full Stack Software Engineer",
-    "ativo": "Full Stack Software Engineer com experiência em aplicações web complexas, marketplaces e soluções financeiras. 📍 Manaus | React • TypeScript • Next.js • Node.js"
+    "ativo": ""
   },
   "About": {
     "title": "👨‍💻 Sobre mim",
@@ -67,8 +67,7 @@
     "subtitle": "Veja algum dos meus projetos e contribuições."
   },
   "nav": {
-    "about": "Sobre",
-    "projects": "Projetos"
+    "about": "Sobre"
   },
   "curriculum": {
     "ViewCV": "Ver currículo",

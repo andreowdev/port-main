@@ -5,10 +5,68 @@ const EMAIL_ADDRESS = "developerandreo@gmail.com";
 const SPOTIFY_PROFILE_URL = "https://open.spotify.com/user/lyixkn1qhupjuexfkygpbzmnd";
 
 export function usePortfolioContent() {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
   const projects = useSetupProjects();
 
-  const text = {
+  const text = i18n.language?.startsWith("pt") ? {
+    aboutLabel: "sobre",
+    availabilityBody:
+      "Estou aberto a freelas, oportunidades remotas e produtos que precisam de uma camada visual mais forte com melhores decisões de UX.",
+    availabilityLabel: "disponível para novos projetos",
+    availabilityTitle: "Produto, clareza e identidade visual no mesmo build.",
+    connectLabel: "conectar",
+    contactDescription:
+      "Se você quer lançar uma ideia, melhorar uma interface existente ou dar mais personalidade a um produto, vou gostar de ouvir sobre isso.",
+    contactEyebrow: "contato",
+    contactTitleAccent: "vamos",
+    contactTitleRest: "conversar",
+    scheduleCta: "agendar conversa",
+    scheduleDescription:
+      "Estou aberto a trabalho.",
+    scheduleEyebrow: "disponibilidade",
+    scheduleTitleAccent: "aberto",
+    scheduleTitleRest: "a trabalho",
+    scheduleTrailing: "Vamos conversar.",
+    copiedEmail: "email copiado",
+    copyEmail: "copiar email",
+    emailLabel: "email",
+    experienceRange: "2025 - 2026",
+    experienceTitleAccent: "Experiência",
+    experienceTitleRest: "& cargos",
+    formError: "Não consegui enviar agora. Tente novamente em instantes.",
+    formMessageLabel: "mensagem",
+    formNameLabel: "nome",
+    formSending: "enviando...",
+    formSubmit: "enviar mensagem",
+    formSuccess: "Mensagem enviada com sucesso. Obrigado pelo contato.",
+    heroLead: "criando interfaces que as pessoas",
+    heroLeadHighlight: "querem usar.",
+    heroRoleAccent: "desenvolvedor",
+    heroRoleRest: "full-stack",
+    methodsLabel: "formas de contato",
+    projectsDescription:
+      "Uma seleção de trabalhos reais e experimentos visuais focados em design de interface, produto e performance.",
+    projectsPageRest: "selecionados",
+    projectsTitleRest: "em destaque",
+    primaryCta: "ver currículo",
+    secondaryCta: "ver contato",
+    summary:
+      "Full Stack Software Engineer focado em qualidade de código, escalabilidade, performance e experiência do usuário.",
+    spotifyFallbackMessage: "A atividade do Spotify está indisponível no momento.",
+    spotifyLabel: "ouvindo",
+    spotifyPlayedAtPrefix: "tocada às",
+    spotifyPlayingLabel: "tocando agora",
+    spotifyProfileLabel: "abrir perfil",
+    spotifyRecentLabel: "última faixa",
+    spotifyTitleAccent: "atividade",
+    spotifyTitleRest: "Spotify",
+    spotifyTrackLinkLabel: "abrir música",
+    toolLabel: "ferramentas",
+    viewAllProjects: "ver projetos",
+    workModeBody:
+      "Meu processo equilibra produto, implementação escalável e usabilidade real. Gosto de software limpo, rápido e intencional.",
+    workModeLabel: "como eu trabalho",
+  } : {
     aboutLabel: "about",
     availabilityBody:
       "I am open to freelance work, remote opportunities, and products that need a stronger visual layer with better UX decisions.",
@@ -30,7 +88,6 @@ export function usePortfolioContent() {
     copiedEmail: "email copied",
     copyEmail: "copy email",
     emailLabel: "email",
-    experienceLabel: "career path",
     experienceRange: "2025 - 2026",
     experienceTitleAccent: "Experience",
     experienceTitleRest: "& roles",
@@ -47,7 +104,6 @@ export function usePortfolioContent() {
     methodsLabel: "ways to reach me",
     projectsDescription:
       "A curated mix of real work and visual experiments focused on interface design, product thinking, and performance.",
-    projectsLabel: "work",
     projectsPageAccent: "selected",
     projectsPageRest: "projects",
     projectsTitleAccent: "featured",
@@ -56,8 +112,6 @@ export function usePortfolioContent() {
     secondaryCta: "view contact",
     summary:
       "Full Stack Software Engineer focused on code quality, scalability, performance, and user experience.",
-    spotifyDescription:
-      "A live glimpse of what is playing right now, or the most recent track when the player is idle.",
     spotifyFallbackMessage: "Spotify activity is unavailable right now.",
     spotifyLabel: "listening",
     spotifyPlayedAtPrefix: "played at",
@@ -120,7 +174,10 @@ export function usePortfolioContent() {
       "TypeScript",
       "Next.js",
       "Node.js",
+      "Go",
       "Tailwind CSS",
+      "Docker",
+      "Redis",
       "MongoDB",
       "SQL",
     ],
@@ -130,34 +187,33 @@ export function usePortfolioContent() {
     experience: {
       items: [
         {
-          company: "Wite Group",
+          company: "AutoCore White Label",
           details: [
-            "Develop backend services for a financial platform covering marketplace, payment gateway, Pix, BaaS, and financial dashboards.",
-            "Build scalable REST APIs with Node.js, NestJS, and TypeScript, implementing business rules across service layers.",
-            "Integrate backend services with databases and external APIs to keep platform data consistent and reliable.",
-            "Contribute to backend architecture improvements by structuring services, controllers, and domain layers for easier maintenance.",
-            "Evolve critical modules such as product management, payment links, integrations, and transaction processing.",
-            "Collaborate with frontend applications to improve API performance and standardize communication between systems.",
+            "Founder-led SaaS white-label platform for automotive workshop management, built as a personal product with multi-tenant architecture, isolated data, custom branding, and per-operation settings.",
+            "Responsible for product ideation, business requirements, architecture, frontend, backend, authentication, permissions, infrastructure, deployment, and business rules.",
+            "Structured more than 8 business modules, including customers, vehicles, service orders, quotes, inventory, finance, POS, commissions, and administrative settings.",
+            "Built complete flows connecting quote, service order, sale, financial control, stock deduction, and commission calculation.",
+            "Implemented Resend for automated transactional emails and developed a Google Chrome extension integrated with the platform ecosystem.",
           ],
-          location: "Rio de Janeiro, Brazil · Remote",
-          period: "FEB 2026 - PRESENT",
-          role: "Full Stack Software Developer",
-          stack: ["Node.js", "NestJS", "TypeScript", "REST APIs", "Pix", "BaaS"],
-          type: "Full-time",
+          location: "Brazil · Remote",
+          period: "MAY 2026 - PRESENT",
+          role: "Founder & Full Stack Software Engineer",
+          stack: ["React", "Next.js", "TypeScript", "Go", "PostgreSQL", "Multi-Tenant"],
+          type: "Personal project",
         },
         {
           company: "Wite Group",
           details: [
-            "Develop frontend interfaces and platform features for a financial ecosystem that includes marketplace, payment gateway, Pix, BaaS, and dashboards.",
-            "Build modern interfaces and reusable components with React.js, TypeScript, and scalable frontend architecture practices.",
-            "Implement new frontend functionality integrated with REST APIs, ensuring consistent and reliable data display.",
-            "Improve frontend architecture and component standardization to accelerate delivery and streamline workflows.",
-            "Evolve admin dashboards and management flows related to products, payment links, and platform operations.",
+            "Develop full-stack features for a financial ecosystem that includes marketplace, payment gateway, Pix, BaaS, white-label systems, and dashboards.",
+            "Build modern interfaces with React.js and TypeScript, integrated with scalable REST APIs built with Node.js, NestJS, and TypeScript.",
+            "Implement business rules, service layers, database integrations, and external API connections to keep platform data consistent and reliable.",
+            "Evolve critical modules such as product management, payment links, integrations, transaction processing, and admin dashboards.",
+            "Improve frontend and backend architecture through reusable components, standardized API communication, and maintainable domain layers.",
           ],
           location: "Rio de Janeiro, Brazil · Remote",
           period: "JUL 2025 - PRESENT",
-          role: "Frontend Software Engineer",
-          stack: ["React.js", "TypeScript", "REST APIs", "Dashboards", "Marketplace", "BaaS"],
+          role: "Full Stack Software Developer",
+          stack: ["React.js", "Node.js", "NestJS", "TypeScript", "REST APIs", "White-label", "BaaS"],
           type: "Full-time",
         },
         {

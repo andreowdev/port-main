@@ -17,37 +17,37 @@ export default function Contacts() {
 
   return (
     <PortfolioShell>
-      <div className="mx-auto grid max-w-5xl gap-10 px-2 lg:grid-cols-[0.95fr_1.05fr]">
-        <section>
-          <p className="mb-4 text-xs uppercase tracking-[0.28em] text-[var(--muted)]">
-            {content.sectionLabels.contact}
-          </p>
-          <h1 className="mixed-title text-4xl text-[var(--fg)] sm:text-5xl">
-            <span className="portfolio-serif italic">{content.contactCopy.titleAccent}</span>{" "}
-            <span className="text-[var(--muted-strong)]">{content.contactCopy.titleRest}</span>
-          </h1>
-          <p className="mt-5 max-w-2xl text-sm leading-7 text-[var(--muted)] sm:text-base">
-            {content.contactCopy.description}
-          </p>
+      <div className="contact-page">
+        <section className="aqua-panel contact-window">
+          <div className="aqua-window-title">
+            <span>{content.sectionLabels.contact}</span>
+            <div aria-hidden="true">
+              <i />
+              <i />
+              <i />
+            </div>
+          </div>
 
-          <div className="mt-10">
-            <p className="mb-4 text-xs uppercase tracking-[0.28em] text-[var(--muted)]">
-              {content.methodsLabel}
-            </p>
+          <div className="contact-window-body">
+            <div className="contact-heading">
+              <span>{content.methodsLabel}</span>
+              <h1>{content.contactCopy.titleAccent} {content.contactCopy.titleRest}</h1>
+              <p>{content.contactCopy.description}</p>
+            </div>
 
-            <div className="grid gap-3">
+            <div className="contact-links">
               <a
                 href={content.emailHref}
-                className="group flex items-center justify-between gap-3 border border-[var(--line)] bg-[var(--panel)] px-4 py-4 text-[var(--muted)] transition-all duration-200 hover:border-[var(--line-strong)] hover:text-[var(--fg)] focus-visible:border-[var(--line-strong)] focus-visible:text-[var(--fg)] focus:outline-none"
+                className="contact-link"
               >
-                <span className="flex items-center gap-3">
-                  <Mail size={16} className="shrink-0" />
+                <span>
+                  <Mail size={16} />
                   <span>
-                    <span className="block text-sm text-[var(--fg)]">{content.emailLabel}</span>
-                    <span className="block text-xs text-[var(--muted)]">{content.emailAddress}</span>
+                    <strong>{content.emailLabel}</strong>
+                    <small>{content.emailAddress}</small>
                   </span>
                 </span>
-                <ArrowUpRight size={16} className="shrink-0 opacity-60" />
+                <ArrowUpRight size={16} />
               </a>
 
               {content.connectLinks.map((link) => {
@@ -59,16 +59,16 @@ export default function Contacts() {
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="group flex items-center justify-between gap-3 border border-[var(--line)] bg-[var(--panel)] px-4 py-4 text-[var(--muted)] transition-all duration-200 hover:border-[var(--line-strong)] hover:text-[var(--fg)] focus-visible:border-[var(--line-strong)] focus-visible:text-[var(--fg)] focus:outline-none"
+                    className="contact-link"
                   >
-                    <span className="flex items-center gap-3">
-                      {Icon ? <Icon size={16} className="shrink-0" /> : null}
+                    <span>
+                      {Icon ? <Icon size={16} /> : null}
                       <span>
-                        <span className="block text-sm text-[var(--fg)]">{link.label}</span>
-                        <span className="block text-xs text-[var(--muted)]">{link.description}</span>
+                        <strong>{link.label}</strong>
+                        <small>{link.description}</small>
                       </span>
                     </span>
-                    <ArrowUpRight size={16} className="shrink-0 opacity-60" />
+                    <ArrowUpRight size={16} />
                   </a>
                 );
               })}
