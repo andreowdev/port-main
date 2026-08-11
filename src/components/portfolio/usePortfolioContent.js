@@ -44,9 +44,6 @@ export function usePortfolioContent() {
     heroRoleAccent: "desenvolvedor",
     heroRoleRest: "full-stack",
     methodsLabel: "formas de contato",
-    projectsDescription:
-      "Uma seleção de trabalhos reais e experimentos visuais focados em design de interface, produto e performance.",
-    projectsPageRest: "selecionados",
     projectsTitleRest: "em destaque",
     primaryCta: "ver currículo",
     secondaryCta: "ver contato",
@@ -102,10 +99,6 @@ export function usePortfolioContent() {
     heroRoleAccent: "full-stack",
     heroRoleRest: "developer",
     methodsLabel: "ways to reach me",
-    projectsDescription:
-      "A curated mix of real work and visual experiments focused on interface design, product thinking, and performance.",
-    projectsPageAccent: "selected",
-    projectsPageRest: "projects",
     projectsTitleAccent: "featured",
     projectsTitleRest: "projects",
     primaryCta: "view resume",

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import { ArrowRight, ArrowUpRight, Copy, FileText, Mail } from "lucide-react";
 import { Avatar } from "@/components/ui/avatar";
-import PortfolioShell from "../components/portfolio/PortfolioShell.jsx";
 import SpotifyPanel from "../components/portfolio/SpotifyPanel.jsx";
 import { usePortfolioContent } from "../components/portfolio/usePortfolioContent.js";
 import { Button } from "../components/ui/button.jsx";
@@ -10,22 +10,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs.
 
 export default function Home() {
   const content = usePortfolioContent();
-  const [copiedEmail, setCopiedEmail] = useState(false);
-  const [activeJob, setActiveJob] = useState(0);
-
-  const handleCopyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(content.emailAddress);
-      setCopiedEmail(true);
-      window.setTimeout(() => setCopiedEmail(false), 1800);
-    } catch {
-      window.location.href = content.emailHref;
-    }
-  };
 
   return (
-    <PortfolioShell>
-      <div className="aqua-home">
+    <div className="aqua-home">
         <section className="aqua-hero">
           <div className="aqua-panel aqua-hero-window">
             <div className="aqua-window-title">
@@ -73,38 +60,7 @@ export default function Home() {
         </section>
 
         <section className="aqua-grid">
-          <div className="aqua-panel aqua-connect-window">
-            <div className="aqua-window-title">
-              <span>{content.sectionLabels.connect}.app</span>
-              <div aria-hidden="true">
-                <i />
-                <i />
-                <i />
-              </div>
-            </div>
-            <div className="aqua-card-inner">
-              <div className="aqua-links">
-                {content.connectLinks.map((link) => (
-                  <a key={link.label} href={link.href} target="_blank" rel="noreferrer" data-service={link.label}>
-                    <span className="pixel-social-icon" aria-hidden="true" />
-                    <strong>{link.label}</strong>
-                    <small>{link.value}</small>
-                    <ArrowUpRight size={16} />
-                  </a>
-                ))}
-                <button type="button" onClick={handleCopyEmail} data-service="email">
-                  <span className="pixel-social-icon" aria-hidden="true" />
-                  <strong>{content.emailLabel}</strong>
-                  <small>{copiedEmail ? content.copiedEmailLabel : content.emailAddress}</small>
-                  <Copy size={16} />
-                </button>
-              </div>
-              <div className="aqua-connect-status">
-                <strong>{content.workAvailability.label}</strong>
-                <span>{content.emailAddress}</span>
-              </div>
-            </div>
-          </div>
+          <ConnectPanel content={content} />
 
           <div className="aqua-panel aqua-tools-window">
             <div className="aqua-window-title">
@@ -132,33 +88,7 @@ export default function Home() {
             <h2>{content.experience.titleAccent} {content.experience.titleRest}</h2>
           </div>
 
-          <Tabs className="aqua-experience-tabs" value={String(activeJob)} onValueChange={(value) => setActiveJob(Number(value))}>
-            <TabsList className="aqua-tabs-list">
-              {content.experience.items.map((item, index) => (
-                <TabsTrigger
-                  key={`${item.company}-${item.role}`}
-                  value={String(index)}
-                >
-                  {item.company}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-
-            {content.experience.items.map((job, index) => (
-              <TabsContent className="aqua-experience-content" key={`${job.company}-${job.period}`} value={String(index)}>
-                <div className="aqua-card-inner">
-                  <span>{job.period}</span>
-                  <h3>{job.role}</h3>
-                  <p>{job.details[0]}</p>
-                  <div className="aqua-tags">
-                    {job.stack.map((item) => (
-                      <span className="aqua-pill" key={item}>{item}</span>
-                    ))}
-                  </div>
-                </div>
-              </TabsContent>
-            ))}
-          </Tabs>
+          <ExperienceTabs items={content.experience.items} />
         </section>
 
         <section className="aqua-section">
@@ -221,7 +151,126 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </div>
-    </PortfolioShell>
+    </div>
   );
 }
+
+function ConnectPanel({ content }) {
+  const [copiedEmail, setCopiedEmail] = useState(false);
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(content.emailAddress);
+      setCopiedEmail(true);
+      window.setTimeout(() => setCopiedEmail(false), 1800);
+    } catch {
+      window.location.href = content.emailHref;
+    }
+  };
+
+  return (
+    <div className="aqua-panel aqua-connect-window">
+      <div className="aqua-window-title">
+        <span>{content.sectionLabels.connect}.app</span>
+        <div aria-hidden="true">
+          <i />
+          <i />
+          <i />
+        </div>
+      </div>
+      <div className="aqua-card-inner">
+        <div className="aqua-links">
+          {content.connectLinks.map((link) => (
+            <a key={link.label} href={link.href} target="_blank" rel="noreferrer" data-service={link.label}>
+              <span className="pixel-social-icon" aria-hidden="true" />
+              <strong>{link.label}</strong>
+              <small>{link.value}</small>
+              <ArrowUpRight size={16} />
+            </a>
+          ))}
+          <button type="button" onClick={handleCopyEmail} data-service="email">
+            <span className="pixel-social-icon" aria-hidden="true" />
+            <strong>{content.emailLabel}</strong>
+            <small>{copiedEmail ? content.copiedEmailLabel : content.emailAddress}</small>
+            <Copy size={16} />
+          </button>
+        </div>
+        <div className="aqua-connect-status">
+          <strong>{content.workAvailability.label}</strong>
+          <span>{content.emailAddress}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ExperienceTabs({ items }) {
+  const [activeJob, setActiveJob] = useState(0);
+  const job = items[activeJob];
+
+  if (!job) {
+    return null;
+  }
+
+  return (
+    <Tabs className="aqua-experience-tabs" value={String(activeJob)} onValueChange={(value) => setActiveJob(Number(value))}>
+      <TabsList className="aqua-tabs-list">
+        {items.map((item, index) => (
+          <TabsTrigger
+            key={`${item.company}-${item.role}`}
+            value={String(index)}
+          >
+            {item.company}
+          </TabsTrigger>
+        ))}
+      </TabsList>
+
+      <TabsContent className="aqua-experience-content" value={String(activeJob)}>
+        <div className="aqua-card-inner">
+          <span>{job.period}</span>
+          <h3>{job.role}</h3>
+          <p>{job.details[0]}</p>
+          <div className="aqua-tags">
+            {job.stack.map((item) => (
+              <span className="aqua-pill" key={item}>{item}</span>
+            ))}
+          </div>
+        </div>
+      </TabsContent>
+    </Tabs>
+  );
+}
+
+ConnectPanel.propTypes = {
+  content: PropTypes.shape({
+    connectLinks: PropTypes.arrayOf(
+      PropTypes.shape({
+        href: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        value: PropTypes.string.isRequired,
+      }),
+    ).isRequired,
+    copiedEmailLabel: PropTypes.string.isRequired,
+    emailAddress: PropTypes.string.isRequired,
+    emailHref: PropTypes.string.isRequired,
+    emailLabel: PropTypes.string.isRequired,
+    sectionLabels: PropTypes.shape({
+      connect: PropTypes.string.isRequired,
+    }).isRequired,
+    workAvailability: PropTypes.shape({
+      label: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+};
+
+ExperienceTabs.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      company: PropTypes.string.isRequired,
+      details: PropTypes.arrayOf(PropTypes.string).isRequired,
+      period: PropTypes.string.isRequired,
+      role: PropTypes.string.isRequired,
+      stack: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }),
+  ).isRequired,
+};
